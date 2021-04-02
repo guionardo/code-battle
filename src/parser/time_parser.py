@@ -32,17 +32,17 @@ class TimeParser:
                     self.percent_cpu = float(just_numbers(value))
                 elif key == 'Elapsed (wall clock) time (h':
                     self.elapsed_time = parse_time(value)
-                elif key == 'Average shared text size(kbytes)':
+                elif key == 'Average shared text size (kbytes)':
                     self.avg_shared_text_size = int(value)
-                elif key == 'Average unshared data size(kbytes)':
+                elif key == 'Average unshared data size (kbytes)':
                     self.avg_unshared_data_size = int(value)
-                elif key == 'Average stack size(kbytes)':
+                elif key == 'Average stack size (kbytes)':
                     self.avg_stack_size = int(value)
-                elif key == 'Average total size(kbytes)':
+                elif key == 'Average total size (kbytes)':
                     self.avg_total_size = int(value)
-                elif key == 'Maximum resident set size(kbytes)':
+                elif key == 'Maximum resident set size (kbytes)':
                     self.max_resident_set_size = int(value)
-                elif key == 'Average resident set size(kbytes)':
+                elif key == 'Average resident set size (kbytes)':
                     self.avg_resident_set_size = int(value)
                 elif key == 'Major(requiring I/O) page faults':
                     self.major_page_faults: int(value)
@@ -64,7 +64,7 @@ class TimeParser:
                     self.socket_messages_received = int(value)
                 elif key == 'Signals delivered':
                     self.signals_delivered = int(value)
-                elif key == 'Page size(bytes)':
+                elif key == 'Page size (bytes)':
                     self.page_size = int(value)
                 elif key == 'Exit status':
                     self.exit_status = int(value)

@@ -1,5 +1,5 @@
 command,user_time,system_time,percent_cpu,elapsed_time,avg_shared_text_size,avg_unshared_data_size,avg_stack_size,avg_total_size,max_resident_set_size,avg_resident_set_size,major_page_faults,minor_page_faults,voluntary_context_switches,involuntary_context_switches,swaps,file_system_inputs,file_system_outputs,socket_messages_sent,socket_messages_received,signals_delivered,page_size,exit_status
-php main.php,0.0,0.0,81.0,0:00:00,,,,,,,,,35,8,0,0,0,0,0,0,,0
-python main.py,0.13,0.01,98.0,0:00:00,,,,,,,,,20,29,0,0,0,0,0,0,,0
-/app/main,0.0,0.0,33.0,0:00:00,,,,,,,,,40,4,0,0,0,0,0,0,,0
-node main.js,0.02,0.0,94.0,0:00:00,,,,,,,,,14,10,0,0,0,0,0,0,,0
+php main.php,0.01,0.0,53.0,0:00:00,0,0,0,0,55504,0,,,26,38,0,0,0,0,0,0,4096,0
+python main.py,0.14,0.01,96.0,0:00:00,0,0,0,0,75056,0,,,21,27,0,0,0,0,0,0,4096,0
+/app/main,0.0,0.0,50.0,0:00:00,0,0,0,0,7520,0,,,8,1,0,0,0,0,0,0,4096,0
+node main.js,0.03,0.0,92.0,0:00:00,0,0,0,0,120640,0,,,14,13,0,0,0,0,0,0,4096,0
