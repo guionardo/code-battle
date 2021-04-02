@@ -1,8 +1,8 @@
 	Command being timed: "node main.js"
 	User time (seconds): 0.03
 	System time (seconds): 0.00
-	Percent of CPU this job got: 92%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 0.03s
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 0.04s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -10,9 +10,9 @@
 	Maximum resident set size (kbytes): 120640
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 2228
-	Voluntary context switches: 14
-	Involuntary context switches: 13
+	Minor (reclaiming a frame) page faults: 2229
+	Voluntary context switches: 17
+	Involuntary context switches: 6
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
