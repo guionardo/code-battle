@@ -1,0 +1,243 @@
+[
+    {
+        "Id": "9860dddfb83d3717c82320cc46c7ffb22bf5a596ee3b0815e34d53dad72741f3",
+        "Created": "2021-04-02T04:46:18.092588166Z",
+        "Path": "sh",
+        "Args": [
+            "timing.sh",
+            "php",
+            "main.php"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2021-04-02T04:46:18.798517827Z",
+            "FinishedAt": "2021-04-02T04:46:18.81456646Z"
+        },
+        "Image": "sha256:d27c58aa6ba37d8c6fa7140d5919dcee6bb27b8ae7f62998ad5aaacbdc30e15b",
+        "ResolvConfPath": "/var/lib/docker/containers/9860dddfb83d3717c82320cc46c7ffb22bf5a596ee3b0815e34d53dad72741f3/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/9860dddfb83d3717c82320cc46c7ffb22bf5a596ee3b0815e34d53dad72741f3/hostname",
+        "HostsPath": "/var/lib/docker/containers/9860dddfb83d3717c82320cc46c7ffb22bf5a596ee3b0815e34d53dad72741f3/hosts",
+        "LogPath": "/var/lib/docker/containers/9860dddfb83d3717c82320cc46c7ffb22bf5a596ee3b0815e34d53dad72741f3/9860dddfb83d3717c82320cc46c7ffb22bf5a596ee3b0815e34d53dad72741f3-json.log",
+        "Name": "/code-battle-php",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/guionardo/dev/github.com/guionardo/code-battle/reports:/reports:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "code-battle_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/d9fbb3549d8f534b0c633b8828bf2b5292bfbefa87d321e9bbf18ab9bcb7a486-init/diff:/var/lib/docker/overlay2/a41944a8d1f862e5bdfdae504facea22c01cf6ca22bc544267f921494e668f30/diff:/var/lib/docker/overlay2/f0e48044f7b6acea01ed7bba0d5bc14f27d68b58fe058ae0200d33f4ef7346f1/diff:/var/lib/docker/overlay2/f1c46a4678f3d0e65ce2bb5d57ac1e83c8b806f4eff2130f45d1b13b449ebab8/diff:/var/lib/docker/overlay2/c367f2ab6c6d3deddd968ea0c4fe5cd5f21c52f543b9c61ad0dce14af9fd66a2/diff:/var/lib/docker/overlay2/f86270e2d766c225db9c97305189608cecb03ce368b33c31049d6bba9e92995e/diff:/var/lib/docker/overlay2/d20abf18e98c2d8f3f1472f946da6ea671e1fb790807bd057e3106b6f3d7d95f/diff:/var/lib/docker/overlay2/ce362fd9dd8454a6438b49ad55b9094ef56dcfe0217c4a8b7c870650e85785d0/diff:/var/lib/docker/overlay2/3832cf890f5c341ed5a6ebff2a1a691cd9d9b15b4362cf72f1cf56d3e8a386fc/diff:/var/lib/docker/overlay2/6c20bfefe3860fc3fac905d7fd72a68ff275b1998877dfaa5faf7b2e02451ffd/diff:/var/lib/docker/overlay2/aee14d7576e043aec430e297f0c99d65e8fb038f27d316f4c4f77de51389e0e5/diff:/var/lib/docker/overlay2/d196aa85b2620f542f2e851bfe2892ae8bf769c4b5f67df78aec8d2b28f88a9e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d9fbb3549d8f534b0c633b8828bf2b5292bfbefa87d321e9bbf18ab9bcb7a486/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d9fbb3549d8f534b0c633b8828bf2b5292bfbefa87d321e9bbf18ab9bcb7a486/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d9fbb3549d8f534b0c633b8828bf2b5292bfbefa87d321e9bbf18ab9bcb7a486/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/reports",
+                "Destination": "/reports",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "9860dddfb83d",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "ITERATIONS=10",
+                "TIMING=time",
+                "HTTP_SERVER=code-battle-http-server",
+                "HTTP_REQUEST=http://code-battle-http-server:8090/hello",
+                "NAME=php",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev dpkg \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkgconf \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F",
+                "PHP_VERSION=8.0.3",
+                "PHP_URL=https://www.php.net/distributions/php-8.0.3.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.0.3.tar.xz.asc",
+                "PHP_SHA256=c9816aa9745a9695672951eaff3a35ca5eddcb9cacf87a4f04b9fb1169010251"
+            ],
+            "Cmd": null,
+            "Image": "code-battle_php",
+            "Volumes": {
+                "/reports": {}
+            },
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "sh",
+                "timing.sh",
+                "php",
+                "main.php"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "86965e1364bb5e0d2319f742d7c7f23445875a59865480360b7cffc1d25123aa",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "code-battle",
+                "com.docker.compose.project.config_files": "docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/guionardo/dev/github.com/guionardo/code-battle",
+                "com.docker.compose.service": "php",
+                "com.docker.compose.version": "1.25.0"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "92d93a465c630c78c213cae155b70f2a75d6b05cb87cc9d901c6062afc97f64c",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/92d93a465c63",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "code-battle_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "9860dddfb83d",
+                        "php"
+                    ],
+                    "NetworkID": "e4b742d7c308d9820a5e59cba7a888946c55354d18aa619aaa43214084661ea0",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

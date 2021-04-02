@@ -1,0 +1,78 @@
+version: '3'
+
+services:
+    http_server:
+        build:
+            context: ./src/http_server
+            dockerfile: Dockerfile
+        container_name: code-battle-http-server
+        # networks: 
+        #     - code-battle
+
+    python:
+        build: 
+            context: ./src/python
+            dockerfile: Dockerfile
+        container_name: code-battle-python
+        env_file: .env
+        environment:
+            - NAME=python
+        volumes:
+            - ./reports:/reports        
+        # networks: 
+        #     - code-battle
+    
+    golang:
+        build:
+            context: ./src/golang
+            dockerfile: Dockerfile
+        container_name: code-battle-golang
+        env_file: .env
+        environment:
+            - NAME=golang
+        volumes:
+            - ./reports:/reports
+        # networks: 
+        #     - code-battle
+
+    php:
+        build:
+            context: ./src/php
+            dockerfile: Dockerfile
+        container_name: code-battle-php
+        env_file: .env
+        environment:
+            - NAME=php
+        volumes:
+            - ./reports:/reports
+        # networks: 
+        #     - code-battle
+
+    node:
+        build:
+            context: ./src/node
+            dockerfile: Dockerfile
+        container_name: code-battle-node
+        env_file: .env
+        environment:
+            - NAME=node
+        volumes:
+            - ./reports:/reports
+        # networks: 
+        #     - code-battle
+
+    parser:
+        build:
+            context: ./src/parser
+            dockerfile: Dockerfile
+        container_name: code-battle-parser
+        env_file: .env
+        environment:
+            - NAME=parser
+            - REPORTS=/reports
+        volumes:
+            - ./reports:/reports
+
+# networks: 
+#     code-battle:
+#         driver: bridge
