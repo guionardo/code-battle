@@ -16,7 +16,7 @@ def main():
     files = get_files(path)
     parseds = [TimeParser(file) for file in files]
     with open(os.path.join(path, 'times.csv'), 'w', newline='') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=TimeParser.FIELDS)
+        writer = csv.DictWriter(csvfile, fieldnames=TimeParser.__all__)
         writer.writeheader()
         writer.writerows([parsed.__dict__ for parsed in parseds])
 

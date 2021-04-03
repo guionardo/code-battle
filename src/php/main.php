@@ -16,8 +16,8 @@ function main(){
     for($i=0;$i<$iterations;$i++){
         $i1 = get_random_int();
         $i2 = get_random_int();
-        $f1 = get_random_int()/get_random_int();
-        $f2 = get_random_int()/get_random_int();
+        $f1 = get_random_int()/(get_random_int() || 1);
+        $f2 = get_random_int()/(get_random_int() || 1);
         $ints = $i1+$i2;
         $floats = $f1*$f2;
         $s = str_repeat('A',1024);

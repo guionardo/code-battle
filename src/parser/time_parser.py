@@ -4,16 +4,18 @@ import re
 
 
 class TimeParser:
-    FIELDS = ['command', 'user_time', 'system_time', 'percent_cpu',
-              'elapsed_time', 'avg_shared_text_size', 'avg_unshared_data_size',
-              'avg_stack_size', 'avg_total_size', 'max_resident_set_size',
-              'avg_resident_set_size', 'major_page_faults', 'minor_page_faults',
-              'voluntary_context_switches', 'involuntary_context_switches',
-              'swaps', 'file_system_inputs', 'file_system_outputs',
-              'socket_messages_sent', 'socket_messages_received', 'signals_delivered',
-              'page_size', 'exit_status']
+    __all__ = ['language', 'command', 'user_time', 'system_time', 'percent_cpu',
+               'elapsed_time', 'avg_shared_text_size', 'avg_unshared_data_size',
+               'avg_stack_size', 'avg_total_size', 'max_resident_set_size',
+               'avg_resident_set_size', 'major_page_faults', 'minor_page_faults',
+               'voluntary_context_switches', 'involuntary_context_switches',
+               'swaps', 'file_system_inputs', 'file_system_outputs',
+               'socket_messages_sent', 'socket_messages_received', 'signals_delivered',
+               'page_size', 'exit_status']
 
     def __init__(self, filename):
+        _, language = os.path.splitext(filename)
+        self.language = language.split('.')[-1]
         if not os.path.isfile(filename):
             raise FileNotFoundError(filename)
         with open(filename) as f:
