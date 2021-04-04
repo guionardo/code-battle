@@ -1,6 +1,6 @@
-if [ "$TIMING" == "valgrind" ]; then
-    valgrind --tool=massif --pages-as-heap=yes --massif-out-file=/reports/valgrind.$NAME "$@"    
-    # grep mem_heap_B massif.out | sed -e 's/mem_heap_B=\(.*\)/\1/' | sort -g | tail -n 1 > /reports/$NAME.report
-else
-    /usr/bin/time -v -o /reports/time.$NAME "$@"
-fi
+#!/bin/sh
+echo "* Generating time data for $NAME"
+/usr/bin/time -v -o /reports/time.$NAME "$@"
+echo "* Generating valgrind data for $NAME"
+valgrind --tool=massif --pages-as-heap=yes --massif-out-file=/reports/valgrind.$NAME "$@"    
+echo "* END OF $NAME"

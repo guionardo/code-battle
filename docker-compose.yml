@@ -5,9 +5,7 @@ services:
         build:
             context: ./src/http_server
             dockerfile: Dockerfile
-        container_name: code-battle-http-server
-        # networks: 
-        #     - code-battle
+        container_name: code-battle-http-server        
 
     python:
         build: 
@@ -18,9 +16,22 @@ services:
         environment:
             - NAME=python
         volumes:
-            - ./reports:/reports        
-        # networks: 
-        #     - code-battle
+            - ./reports:/reports
+            - ./apk_cache:/apk_cache
+        
+    
+    pypy:
+        build: 
+            context: ./src/pypy
+            dockerfile: Dockerfile
+        container_name: code-battle-pypy
+        env_file: .env
+        environment:
+            - NAME=pypy
+        volumes:
+            - ./reports:/reports
+            - ./apk_cache:/apk_cache
+        
     
     golang:
         build:
@@ -32,8 +43,8 @@ services:
             - NAME=golang
         volumes:
             - ./reports:/reports
-        # networks: 
-        #     - code-battle
+            - ./apk_cache:/apk_cache
+        
 
     php:
         build:
@@ -45,8 +56,8 @@ services:
             - NAME=php
         volumes:
             - ./reports:/reports
-        # networks: 
-        #     - code-battle
+            - ./apk_cache:/apk_cache
+        
 
     node:
         build:
@@ -58,8 +69,8 @@ services:
             - NAME=node
         volumes:
             - ./reports:/reports
-        # networks: 
-        #     - code-battle
+            - ./apk_cache:/apk_cache
+        
 
     parser:
         build:
@@ -73,6 +84,3 @@ services:
         volumes:
             - ./reports:/reports
 
-# networks: 
-#     code-battle:
-#         driver: bridge

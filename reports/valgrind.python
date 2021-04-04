@@ -1,0 +1,1897 @@
+desc: --pages-as-heap=yes --massif-out-file=/reports/valgrind.python
+cmd: python main.py
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=4096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=3217204
+mem_heap_B=7839744
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=8477717
+mem_heap_B=8208384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=15609208
+mem_heap_B=8916992
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=19965811
+mem_heap_B=8966144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=26827267
+mem_heap_B=9752576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=32064552
+mem_heap_B=9789440
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=38676472
+mem_heap_B=14774272
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=42965981
+mem_heap_B=15646720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=49756073
+mem_heap_B=16109568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=53555301
+mem_heap_B=16134144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=60860444
+mem_heap_B=16740352
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 16740352 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n15: 14974976 0x4036755: mmap (in /lib/ld-musl-x86_64.so.1)
+  n1: 1896448 0x48F6FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 1896448 0x1CEFFE: ???
+    n1: 1896448 0x3FF00083E: ???
+     n0: 1896448 0x5EFFE: ???
+  n1: 1409024 0x4E0BFFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 1409024 0x157FFE: ???
+    n1: 1409024 0x3FEFFD89E: ???
+     n0: 1409024 0x74FFE: ???
+  n1: 684032 0x4AC5FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 684032 0xA6FFE: ???
+    n1: 684032 0x3FF00083E: ???
+     n0: 684032 0x22DFFE: ???
+  n1: 585728 0x4B6DFFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 585728 0x8EFFE: ???
+    n1: 585728 0x3FF00083E: ???
+     n0: 585728 0x2D4FFE: ???
+  n1: 528384 0x4F63FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 528384 0x80FFE: ???
+    n1: 528384 0x3FEFFD89E: ???
+     n0: 528384 0x1CCFFE: ???
+  n0: 483328 in 26 places, all below massif's threshold (1.00%)
+  n1: 262144 0xFFE: ???
+   n1: 262144 0x7FD: ???
+    n1: 262144 0x1FFEFFED7E: ???
+     n0: 262144 0x32D: ???
+  n1: 262144 0x4C3B20E: ???
+   n1: 262144 0x83D519A7C04B1BF2: ???
+    n1: 262144 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+     n0: 262144 0x8: ???
+  n1: 262144 0x4C67E86: ???
+   n1: 262144 0x49B572B: _PyMethodDescr_FastCallKeywords (descrobject.c:288)
+    n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+     n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+      n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+       n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+        n1: 262144 0x49E960D: PyTuple_New (tupleobject.c:117)
+         n1: 262144 0x4A3DB29: r_object (marshal.c:1225)
+          n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+           n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+            n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+             n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+              n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+               n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                 n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                  n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                   n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                    n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                     n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                      n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                       n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                        n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                         n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                          n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B090B: object_vacall (call.c:1202)
+  n1: 262144 0x510363E: ???
+   n1: 262144 0x10CA5E: ??? (in /usr/local/bin/python3.7)
+    n1: 262144 0x51151B6: ???
+     n1: 262144 0x3000000016: ???
+      n1: 262144 0x1FFEFF831E: ???
+       n1: 262144 0x1CE: ???
+        n1: 262144 0x1A: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49BA7DF: _PyFrame_New_NoTrack (frameobject.c:713)
+              n1: 262144 0x4A2187F: _PyEval_EvalCodeWithName (ceval.c:3691)
+               n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                 n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                  n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                   n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                    n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                     n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                      n1: 262144 0x4A1FE8E: builtin___build_class__ (bltinmodule.c:227)
+                       n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                        n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                         n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                          n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                           n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                            n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                             n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                              n0: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+  n1: 262144 0x7466656A: ???
+   n1: 262144 0xC145BE5CDE67CDD6: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x50CBFAE: ???
+      n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x34: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DBE3: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DFBB: r_object (marshal.c:1408)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                  n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                   n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                    n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                     n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                      n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                       n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                        n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                         n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                          n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                           n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x1FFEFFBE3E: ???
+   n1: 262144 0x1FFEFFBE2E: ???
+    n1: 262144 0x4D74A9E: ???
+     n1: 262144 0x5081B3E: ???
+      n1: 262144 0x4CB266E: ???
+       n1: 262144 0x159: ???
+        n1: 262144 0x13: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49AB67B: PyBytes_FromStringAndSize (bytesobject.c:85)
+            n1: 262144 0x4A3DCBF: r_object (marshal.c:1126)
+             n1: 262144 0x4A3E70B: r_object (marshal.c:1399)
+              n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+               n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                 n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                  n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                   n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                    n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                     n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                      n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                       n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                        n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                         n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+  n1: 262144 0x1FFEFFCA0E: ???
+   n1: 262144 0x4D37E3E: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x4BFF0EE: ???
+      n1: 262144 0x4D37E3E: ???
+       n1: 262144 0x56: ???
+        n1: 262144 0x3: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x49ED72F: PyType_GenericAlloc (typeobject.c:992)
+             n1: 262144 0x49B5120: PyDescr_NewWrapper (descrobject.c:722)
+              n1: 262144 0x49EABCE: PyType_Ready (typeobject.c:7451)
+               n1: 262144 0x49EE5BB: type_getattro (typeobject.c:3182)
+                n1: 262144 0x4A22DF4: _PyEval_EvalFrameDefault (ceval.c:2573)
+                 n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                  n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                   n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                    n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                     n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                      n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                       n1: 262144 0x49B090B: object_vacall (call.c:1202)
+                        n1: 262144 0x49B1FC6: _PyObject_CallMethodIdObjArgs (call.c:1252)
+                         n1: 262144 0x4A62892: _abc__abc_subclasscheck (_abc.c:616)
+                          n1: 262144 0x49AFC59: _PyMethodDef_RawFastCallKeywords (call.c:655)
+                           n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                            n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+  n1: 262144 0x51A9060B0C814100: ???
+   n1: 262144 0x2FE: ???
+    n1: 262144 0x6: ???
+     n1: 262144 0x36: ???
+      n1: 262144 0x1: ???
+       n1: 262144 0x36: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49E9629: PyTuple_New (tupleobject.c:117)
+              n1: 262144 0x49ED420: PyType_Ready (typeobject.c:5196)
+               n1: 262144 0x4A8089B: _Py_ReadyTypes (object.c:1738)
+                n1: 262144 0x4AA4BB8: _Py_InitializeCore_impl (pylifecycle.c:736)
+                 n1: 262144 0x4AA49FA: _Py_InitializeCore (pylifecycle.c:862)
+                  n1: 262144 0x4AAE304: pymain_init (main.c:3001)
+                   n1: 262144 0x4AAD89A: pymain_main (main.c:3023)
+                    n1: 262144 0x4AAD84A: _Py_UnixMain (main.c:3063)
+                     n1: 262144 0x401E13B: (below main) (in /lib/ld-musl-x86_64.so.1)
+                      n0: 262144 0x109063: main (python.c:15)
+  n1: 192512 0x4FE5FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 192512 0x2EFFE: ???
+    n1: 192512 0x3FEFFD89E: ???
+     n0: 192512 0x24DFFE: ???
+ n1: 1122304 0x402432D: __expand_heap (in /lib/ld-musl-x86_64.so.1)
+  n0: 606208 in 39 places, all below massif's threshold (1.00%)
+ n0: 643072 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=65708144
+mem_heap_B=16748544
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=72814460
+mem_heap_B=17088512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=78585792
+mem_heap_B=17129472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=82084152
+mem_heap_B=17424384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 17424384 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n17: 15499264 0x4036755: mmap (in /lib/ld-musl-x86_64.so.1)
+  n1: 1896448 0x48F6FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 1896448 0x1CEFFE: ???
+    n1: 1896448 0x3FF00083E: ???
+     n0: 1896448 0x5EFFE: ???
+  n1: 1409024 0x4E0BFFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 1409024 0x157FFE: ???
+    n1: 1409024 0x3FEFFD89E: ???
+     n0: 1409024 0x74FFE: ???
+  n1: 684032 0x4AC5FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 684032 0xA6FFE: ???
+    n1: 684032 0x3FF00083E: ???
+     n0: 684032 0x22DFFE: ???
+  n1: 585728 0x4B6DFFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 585728 0x8EFFE: ???
+    n1: 585728 0x3FF00083E: ???
+     n0: 585728 0x2D4FFE: ???
+  n1: 528384 0x4F63FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 528384 0x80FFE: ???
+    n1: 528384 0x3FEFFD89E: ???
+     n0: 528384 0x1CCFFE: ???
+  n0: 483328 in 26 places, all below massif's threshold (1.00%)
+  n1: 262144 0xFFE: ???
+   n1: 262144 0x7FD: ???
+    n1: 262144 0x1FFEFFED7E: ???
+     n0: 262144 0x32D: ???
+  n1: 262144 0x4C3B20E: ???
+   n1: 262144 0x83D519A7C04B1BF2: ???
+    n1: 262144 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+     n0: 262144 0x8: ???
+  n1: 262144 0x4C67E86: ???
+   n1: 262144 0x49B572B: _PyMethodDescr_FastCallKeywords (descrobject.c:288)
+    n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+     n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+      n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+       n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+        n1: 262144 0x49E960D: PyTuple_New (tupleobject.c:117)
+         n1: 262144 0x4A3DB29: r_object (marshal.c:1225)
+          n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+           n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+            n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+             n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+              n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+               n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                 n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                  n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                   n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                    n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                     n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                      n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                       n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                        n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                         n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                          n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B090B: object_vacall (call.c:1202)
+  n1: 262144 0x510363E: ???
+   n1: 262144 0x10CA5E: ??? (in /usr/local/bin/python3.7)
+    n1: 262144 0x51151B6: ???
+     n1: 262144 0x3000000016: ???
+      n1: 262144 0x1FFEFF831E: ???
+       n1: 262144 0x1CE: ???
+        n1: 262144 0x1A: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49BA7DF: _PyFrame_New_NoTrack (frameobject.c:713)
+              n1: 262144 0x4A2187F: _PyEval_EvalCodeWithName (ceval.c:3691)
+               n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                 n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                  n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                   n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                    n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                     n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                      n1: 262144 0x4A1FE8E: builtin___build_class__ (bltinmodule.c:227)
+                       n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                        n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                         n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                          n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                           n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                            n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                             n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                              n0: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+  n1: 262144 0x7466656A: ???
+   n1: 262144 0xC145BE5CDE67CDD6: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x50CBFAE: ???
+      n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x34: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DBE3: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DFBB: r_object (marshal.c:1408)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                  n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                   n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                    n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                     n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                      n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                       n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                        n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                         n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                          n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                           n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x1FFEFFB732: ???
+   n1: 262144 0x6674750004A3D1DB: ???
+    n1: 262144 0x400385D: ??? (in /lib/ld-musl-x86_64.so.1)
+     n0: 262144 0x506C0AE: ???
+  n1: 262144 0x1FFEFFBE3E: ???
+   n1: 262144 0x1FFEFFBE2E: ???
+    n1: 262144 0x4D74A9E: ???
+     n1: 262144 0x5081B3E: ???
+      n1: 262144 0x4CB266E: ???
+       n1: 262144 0x159: ???
+        n1: 262144 0x13: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49AB67B: PyBytes_FromStringAndSize (bytesobject.c:85)
+            n1: 262144 0x4A3DCBF: r_object (marshal.c:1126)
+             n1: 262144 0x4A3E70B: r_object (marshal.c:1399)
+              n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+               n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                 n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                  n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                   n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                    n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                     n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                      n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                       n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                        n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                         n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+  n1: 262144 0x1FFEFFCA0E: ???
+   n1: 262144 0x4D37E3E: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x4BFF0EE: ???
+      n1: 262144 0x4D37E3E: ???
+       n1: 262144 0x56: ???
+        n1: 262144 0x3: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x49ED72F: PyType_GenericAlloc (typeobject.c:992)
+             n1: 262144 0x49B5120: PyDescr_NewWrapper (descrobject.c:722)
+              n1: 262144 0x49EABCE: PyType_Ready (typeobject.c:7451)
+               n1: 262144 0x49EE5BB: type_getattro (typeobject.c:3182)
+                n1: 262144 0x4A22DF4: _PyEval_EvalFrameDefault (ceval.c:2573)
+                 n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                  n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                   n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                    n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                     n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                      n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                       n1: 262144 0x49B090B: object_vacall (call.c:1202)
+                        n1: 262144 0x49B1FC6: _PyObject_CallMethodIdObjArgs (call.c:1252)
+                         n1: 262144 0x4A62892: _abc__abc_subclasscheck (_abc.c:616)
+                          n1: 262144 0x49AFC59: _PyMethodDef_RawFastCallKeywords (call.c:655)
+                           n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                            n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+  n1: 262144 0x74706563635F: ???
+   n1: 262144 0xC145BE5CDE67CDD6: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x5190F6E: ???
+      n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x37: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DB53: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                 n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                  n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                   n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                    n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                     n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                      n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                       n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                        n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                         n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                          n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                              n0: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+  n1: 262144 0x51A9060B0C814100: ???
+   n1: 262144 0x2FE: ???
+    n1: 262144 0x6: ???
+     n1: 262144 0x36: ???
+      n1: 262144 0x1: ???
+       n1: 262144 0x36: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49E9629: PyTuple_New (tupleobject.c:117)
+              n1: 262144 0x49ED420: PyType_Ready (typeobject.c:5196)
+               n1: 262144 0x4A8089B: _Py_ReadyTypes (object.c:1738)
+                n1: 262144 0x4AA4BB8: _Py_InitializeCore_impl (pylifecycle.c:736)
+                 n1: 262144 0x4AA49FA: _Py_InitializeCore (pylifecycle.c:862)
+                  n1: 262144 0x4AAE304: pymain_init (main.c:3001)
+                   n1: 262144 0x4AAD89A: pymain_main (main.c:3023)
+                    n1: 262144 0x4AAD84A: _Py_UnixMain (main.c:3063)
+                     n1: 262144 0x401E13B: (below main) (in /lib/ld-musl-x86_64.so.1)
+                      n0: 262144 0x109063: main (python.c:15)
+  n1: 192512 0x4FE5FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 192512 0x2EFFE: ???
+    n1: 192512 0x3FEFFD89E: ???
+     n0: 192512 0x24DFFE: ???
+ n1: 1282048 0x402432D: __expand_heap (in /lib/ld-musl-x86_64.so.1)
+  n0: 688128 in 46 places, all below massif's threshold (1.00%)
+ n0: 643072 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=85102424
+mem_heap_B=17788928
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=97844219
+mem_heap_B=17829888
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=99353932
+mem_heap_B=18518016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=111664081
+mem_heap_B=19595264
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=114888522
+mem_heap_B=20172800
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=130708959
+mem_heap_B=20434944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=132646441
+mem_heap_B=20455424
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=139272086
+mem_heap_B=20467712
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=145104896
+mem_heap_B=21049344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=149032807
+mem_heap_B=21311488
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=156932342
+mem_heap_B=21352448
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=162389205
+mem_heap_B=21614592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=167846876
+mem_heap_B=21712896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=173033776
+mem_heap_B=21737472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=192680000
+mem_heap_B=21745664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=203226841
+mem_heap_B=22007808
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 22007808 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n25: 19632128 0x4036755: mmap (in /lib/ld-musl-x86_64.so.1)
+  n1: 1896448 0x48F6FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 1896448 0x1CEFFE: ???
+    n1: 1896448 0x3FF00083E: ???
+     n0: 1896448 0x5EFFE: ???
+  n1: 1409024 0x4E0BFFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 1409024 0x157FFE: ???
+    n1: 1409024 0x3FEFFD89E: ???
+     n0: 1409024 0x74FFE: ???
+  n0: 1290240 in 56 places, all below massif's threshold (1.00%)
+  n1: 684032 0x4AC5FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 684032 0xA6FFE: ???
+    n1: 684032 0x3FF00083E: ???
+     n0: 684032 0x22DFFE: ???
+  n1: 585728 0x4B6DFFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 585728 0x8EFFE: ???
+    n1: 585728 0x3FF00083E: ???
+     n0: 585728 0x2D4FFE: ???
+  n1: 528384 0x4F63FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 528384 0x80FFE: ???
+    n1: 528384 0x3FEFFD89E: ???
+     n0: 528384 0x1CCFFE: ???
+  n1: 299008 0x4BF8BFE: ???
+   n1: 299008 0x49FD828: unicode_rstrip (unicodeobject.c:12454)
+    n1: 299008 0x4803E: ???
+     n1: 299008 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+      n1: 299008 0x1FFEFF7D7E: ???
+       n1: 299008 0x4C3B90E: ???
+        n1: 299008 0x48016: ???
+         n1: 299008 0x3FFEE: ???
+          n1: 299008 0x4BFF0EE: ???
+           n1: 299008 0x4105A9E: ???
+            n1: 299008 0x3FFE: ???
+             n1: 299008 0x7FFE: ???
+              n1: 299008 0x49DBF36: PyObject_Malloc (obmalloc.c:1585)
+               n1: 299008 0x49D2847: dictresize (dictobject.c:534)
+                n1: 299008 0x49D20E1: PyDict_SetDefault (dictobject.c:994)
+                 n1: 299008 0x49F65E1: PyUnicode_InternInPlace (unicodeobject.c:15292)
+                  n1: 299008 0x4A3DAB6: r_object (marshal.c:1173)
+                   n1: 299008 0x4A3DC07: r_object (marshal.c:1231)
+                    n1: 299008 0x4A3DC4D: r_object (marshal.c:1231)
+                     n1: 299008 0x4A3E721: r_object (marshal.c:1402)
+                      n1: 299008 0x4AA3D88: read_object (marshal.c:1488)
+                       n1: 299008 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                        n1: 299008 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                         n1: 299008 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                          n1: 299008 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                           n1: 299008 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                            n1: 299008 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                             n1: 299008 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 299008 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0xFFE: ???
+   n1: 262144 0x7FD: ???
+    n1: 262144 0x1FFEFFED7E: ???
+     n0: 262144 0x32D: ???
+  n1: 262144 0x3FFE: ???
+   n2: 262144 0x1FFD: ???
+    n1: 262144 0x1FFEFFC20E: ???
+     n1: 262144 0x519802E: ???
+      n2: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x37: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DBBF: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DFA5: r_object (marshal.c:1405)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                  n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                   n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                    n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                     n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                      n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                       n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                        n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                         n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                          n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                           n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262144 0x4BFD04E: ???
+   n0: 262144 0x49D23BE: lookdict_unicode_nodummy (eq.h:22)
+  n1: 262144 0x4C3B20E: ???
+   n1: 262144 0x83D519A7C04B1BF2: ???
+    n1: 262144 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+     n0: 262144 0x8: ???
+  n1: 262144 0x4C67E86: ???
+   n1: 262144 0x49B572B: _PyMethodDescr_FastCallKeywords (descrobject.c:288)
+    n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+     n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+      n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+       n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+        n1: 262144 0x49E960D: PyTuple_New (tupleobject.c:117)
+         n1: 262144 0x4A3DB29: r_object (marshal.c:1225)
+          n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+           n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+            n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+             n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+              n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+               n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                 n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                  n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                   n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                    n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                     n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                      n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                       n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                        n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                         n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                          n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B090B: object_vacall (call.c:1202)
+  n1: 262144 0x510363E: ???
+   n1: 262144 0x10CA5E: ??? (in /usr/local/bin/python3.7)
+    n1: 262144 0x51151B6: ???
+     n1: 262144 0x3000000016: ???
+      n1: 262144 0x1FFEFF831E: ???
+       n1: 262144 0x1CE: ???
+        n1: 262144 0x1A: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49BA7DF: _PyFrame_New_NoTrack (frameobject.c:713)
+              n1: 262144 0x4A2187F: _PyEval_EvalCodeWithName (ceval.c:3691)
+               n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                 n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                  n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                   n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                    n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                     n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                      n1: 262144 0x4A1FE8E: builtin___build_class__ (bltinmodule.c:227)
+                       n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                        n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                         n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                          n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                           n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                            n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                             n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                              n0: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+  n1: 262144 0x52BEFFE: ??? (in /lib/libssl.so.1.1)
+   n1: 262144 0x3FFFE: ???
+    n1: 262144 0x3FEFF737E: ???
+     n0: 262144 0x1BFFE: ???
+  n1: 262144 0x5371A6E: ???
+   n1: 262144 0x4BFF2FE: ???
+    n1: 262144 0x4BFF04E: ???
+     n1: 262144 0x4BFF2FE: ???
+      n1: 262144 0x4: ???
+       n1: 262144 0x196: ???
+        n1: 262144 0x17: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49BA7DF: _PyFrame_New_NoTrack (frameobject.c:713)
+              n1: 262144 0x4A2187F: _PyEval_EvalCodeWithName (ceval.c:3691)
+               n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                n1: 262144 0x4A1FB17: builtin___build_class__ (bltinmodule.c:243)
+                 n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                  n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                   n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                    n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                     n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                      n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                       n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                        n1: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+                         n1: 262144 0x49AFFDE: _PyCFunction_FastCallDict (call.c:586)
+                          n1: 262144 0x4A279D2: _PyEval_EvalFrameDefault (ceval.c:4641)
+                           n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                            n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                             n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x53D39AE: ???
+   n1: 262144 0x74E6840C499B2639: ???
+    n1: 262144 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+     n1: 262144 0x53D39AE: ???
+      n1: 262144 0x51FB01E: ???
+       n1: 262144 0x105: ???
+        n1: 262144 0xE: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49AB67B: PyBytes_FromStringAndSize (bytesobject.c:85)
+            n1: 262144 0x4A3DCBF: r_object (marshal.c:1126)
+             n1: 262144 0x4A3DF79: r_object (marshal.c:1399)
+              n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                  n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                   n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                    n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                     n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                      n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                       n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                        n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                         n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x54699CE: ???
+   n1: 262144 0x4B949C6: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+    n1: 262144 0x5460DCE: ???
+     n1: 262144 0x4BFDE2E: ???
+      n1: 262144 0x421F53E: ???
+       n1: 262144 0xA6: ???
+        n1: 262144 0x8: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49D528D: PyDict_Copy (dictobject.c:627)
+            n1: 262144 0x49EEC5D: type_new (typeobject.c:7293)
+             n1: 262144 0x49EE603: type_call (typeobject.c:951)
+              n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+               n1: 262144 0x4A1FB57: builtin___build_class__ (bltinmodule.c:253)
+                n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                 n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                  n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                   n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                    n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                     n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                      n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                       n1: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+                        n1: 262144 0x49AFFDE: _PyCFunction_FastCallDict (call.c:586)
+                         n1: 262144 0x4A279D2: _PyEval_EvalFrameDefault (ceval.c:4641)
+                          n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                           n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                            n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                              n0: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+  n0: 262144 0x549C44E: ???
+  n1: 262144 0x7466656A: ???
+   n1: 262144 0xC145BE5CDE67CDD6: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x50CBFAE: ???
+      n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x34: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DBE3: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DFBB: r_object (marshal.c:1408)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                  n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                   n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                    n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                     n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                      n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                       n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                        n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                         n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                          n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                           n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x1FFEFFA712: ???
+   n1: 262144 0x667475300000002E: ???
+    n1: 262144 0x1FFE00385D: ???
+     n1: 262144 0xC145BE5CDE67CDD6: ???
+      n1: 262144 0x51C1ACE: ???
+       n1: 262144 0x8E: ???
+        n1: 262144 0x6: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49B3376: PyCode_New (codeobject.c:187)
+            n1: 262144 0x4A3E0D3: r_object (marshal.c:1430)
+             n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+              n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+               n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                 n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                  n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                   n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                    n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                     n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                      n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                       n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                        n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                         n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                          n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                              n0: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+  n1: 262144 0x1FFEFFB732: ???
+   n1: 262144 0x6674750004A3D1DB: ???
+    n1: 262144 0x400385D: ??? (in /lib/ld-musl-x86_64.so.1)
+     n0: 262144 0x506C0AE: ???
+  n1: 262144 0x1FFEFFBE3E: ???
+   n1: 262144 0x1FFEFFBE2E: ???
+    n1: 262144 0x4D74A9E: ???
+     n1: 262144 0x5081B3E: ???
+      n1: 262144 0x4CB266E: ???
+       n1: 262144 0x159: ???
+        n1: 262144 0x13: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49AB67B: PyBytes_FromStringAndSize (bytesobject.c:85)
+            n1: 262144 0x4A3DCBF: r_object (marshal.c:1126)
+             n1: 262144 0x4A3E70B: r_object (marshal.c:1399)
+              n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+               n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                 n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                  n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                   n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                    n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                     n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                      n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                       n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                        n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                         n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+  n1: 262144 0x1FFEFFCA0E: ???
+   n1: 262144 0x4D37E3E: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x4BFF0EE: ???
+      n1: 262144 0x4D37E3E: ???
+       n1: 262144 0x56: ???
+        n1: 262144 0x3: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x49ED72F: PyType_GenericAlloc (typeobject.c:992)
+             n1: 262144 0x49B5120: PyDescr_NewWrapper (descrobject.c:722)
+              n1: 262144 0x49EABCE: PyType_Ready (typeobject.c:7451)
+               n1: 262144 0x49EE5BB: type_getattro (typeobject.c:3182)
+                n1: 262144 0x4A22DF4: _PyEval_EvalFrameDefault (ceval.c:2573)
+                 n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                  n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                   n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                    n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                     n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                      n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                       n1: 262144 0x49B090B: object_vacall (call.c:1202)
+                        n1: 262144 0x49B1FC6: _PyObject_CallMethodIdObjArgs (call.c:1252)
+                         n1: 262144 0x4A62892: _abc__abc_subclasscheck (_abc.c:616)
+                          n1: 262144 0x49AFC59: _PyMethodDef_RawFastCallKeywords (call.c:655)
+                           n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                            n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+  n1: 262144 0x646F6D666562: ???
+   n1: 262144 0x61E: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0xB3: ???
+      n1: 262144 0x9: ???
+       n1: 262144 0xB3: ???
+        n1: 262144 0x9: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DB53: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                  n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                   n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                    n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                     n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                      n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                       n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                        n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                         n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x51A9060B0C814100: ???
+   n1: 262144 0x2FE: ???
+    n1: 262144 0x6: ???
+     n1: 262144 0x36: ???
+      n1: 262144 0x1: ???
+       n1: 262144 0x36: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49E9629: PyTuple_New (tupleobject.c:117)
+              n1: 262144 0x49ED420: PyType_Ready (typeobject.c:5196)
+               n1: 262144 0x4A8089B: _Py_ReadyTypes (object.c:1738)
+                n1: 262144 0x4AA4BB8: _Py_InitializeCore_impl (pylifecycle.c:736)
+                 n1: 262144 0x4AA49FA: _Py_InitializeCore (pylifecycle.c:862)
+                  n1: 262144 0x4AAE304: pymain_init (main.c:3001)
+                   n1: 262144 0x4AAD89A: pymain_main (main.c:3023)
+                    n1: 262144 0x4AAD84A: _Py_UnixMain (main.c:3063)
+                     n1: 262144 0x401E13B: (below main) (in /lib/ld-musl-x86_64.so.1)
+                      n0: 262144 0x109063: main (python.c:15)
+ n1: 1732608 0x402432D: __expand_heap (in /lib/ld-musl-x86_64.so.1)
+  n0: 864256 in 53 places, all below massif's threshold (1.00%)
+ n0: 643072 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=208825188
+mem_heap_B=22016000
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=242501904
+mem_heap_B=22024192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=246335720
+mem_heap_B=22122496
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=254461562
+mem_heap_B=22163456
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=256878495
+mem_heap_B=22495232
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=264715426
+mem_heap_B=22548480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 22548480 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n26: 19963904 0x4036755: mmap (in /lib/ld-musl-x86_64.so.1)
+  n1: 1896448 0x48F6FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 1896448 0x1CEFFE: ???
+    n1: 1896448 0x3FF00083E: ???
+     n0: 1896448 0x5EFFE: ???
+  n1: 1409024 0x4E0BFFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 1409024 0x157FFE: ???
+    n1: 1409024 0x3FEFFD89E: ???
+     n0: 1409024 0x74FFE: ???
+  n0: 1318912 in 59 places, all below massif's threshold (1.00%)
+  n1: 684032 0x4AC5FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 684032 0xA6FFE: ???
+    n1: 684032 0x3FF00083E: ???
+     n0: 684032 0x22DFFE: ???
+  n1: 585728 0x4B6DFFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 585728 0x8EFFE: ???
+    n1: 585728 0x3FF00083E: ???
+     n0: 585728 0x2D4FFE: ???
+  n1: 528384 0x4F63FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 528384 0x80FFE: ???
+    n1: 528384 0x3FEFFD89E: ???
+     n0: 528384 0x1CCFFE: ???
+  n1: 299008 0x4BF8BFE: ???
+   n1: 299008 0x49FD828: unicode_rstrip (unicodeobject.c:12454)
+    n1: 299008 0x4803E: ???
+     n1: 299008 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+      n1: 299008 0x1FFEFF7D7E: ???
+       n1: 299008 0x4C3B90E: ???
+        n1: 299008 0x48016: ???
+         n1: 299008 0x3FFEE: ???
+          n1: 299008 0x4BFF0EE: ???
+           n1: 299008 0x4105A9E: ???
+            n1: 299008 0x3FFE: ???
+             n1: 299008 0x7FFE: ???
+              n1: 299008 0x49DBF36: PyObject_Malloc (obmalloc.c:1585)
+               n1: 299008 0x49D2847: dictresize (dictobject.c:534)
+                n1: 299008 0x49D20E1: PyDict_SetDefault (dictobject.c:994)
+                 n1: 299008 0x49F65E1: PyUnicode_InternInPlace (unicodeobject.c:15292)
+                  n1: 299008 0x4A3DAB6: r_object (marshal.c:1173)
+                   n1: 299008 0x4A3DC07: r_object (marshal.c:1231)
+                    n1: 299008 0x4A3DC4D: r_object (marshal.c:1231)
+                     n1: 299008 0x4A3E721: r_object (marshal.c:1402)
+                      n1: 299008 0x4AA3D88: read_object (marshal.c:1488)
+                       n1: 299008 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                        n1: 299008 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                         n1: 299008 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                          n1: 299008 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                           n1: 299008 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                            n1: 299008 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                             n1: 299008 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 299008 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0xFFE: ???
+   n1: 262144 0x7FD: ???
+    n1: 262144 0x1FFEFFED7E: ???
+     n0: 262144 0x32D: ???
+  n1: 262144 0x3FFE: ???
+   n2: 262144 0x1FFD: ???
+    n1: 262144 0x1FFEFFC20E: ???
+     n1: 262144 0x519802E: ???
+      n2: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x37: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DBBF: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DFA5: r_object (marshal.c:1405)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                  n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                   n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                    n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                     n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                      n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                       n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                        n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                         n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                          n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                           n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262144 0x4BFD04E: ???
+   n0: 262144 0x49D23BE: lookdict_unicode_nodummy (eq.h:22)
+  n1: 262144 0x4C3B20E: ???
+   n1: 262144 0x83D519A7C04B1BF2: ???
+    n1: 262144 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+     n0: 262144 0x8: ???
+  n1: 262144 0x4C67E86: ???
+   n1: 262144 0x49B572B: _PyMethodDescr_FastCallKeywords (descrobject.c:288)
+    n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+     n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+      n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+       n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+        n1: 262144 0x49E960D: PyTuple_New (tupleobject.c:117)
+         n1: 262144 0x4A3DB29: r_object (marshal.c:1225)
+          n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+           n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+            n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+             n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+              n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+               n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                 n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                  n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                   n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                    n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                     n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                      n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                       n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                        n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                         n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                          n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B090B: object_vacall (call.c:1202)
+  n1: 262144 0x505468E: ???
+   n1: 262144 0x1E: ???
+    n1: 262144 0x1E: ???
+     n1: 262144 0x49DBF36: PyObject_Malloc (obmalloc.c:1585)
+      n1: 262144 0x4B875BE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+       n1: 262144 0x505C2FE: ???
+        n1: 262144 0x505468E: ???
+         n1: 262144 0x5056C0E: ???
+          n1: 262144 0x53EA7CE: ???
+           n1: 262144 0x53EA93E: ???
+            n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+             n1: 262144 0x4A579CB: _PyObject_GC_New (gcmodule.c:1730)
+              n1: 262144 0x49BB00B: PyFunction_NewWithQualName (funcobject.c:23)
+               n1: 262144 0x4A24445: _PyEval_EvalFrameDefault (ceval.c:3207)
+                n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                 n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                  n1: 262144 0x4A1FB17: builtin___build_class__ (bltinmodule.c:243)
+                   n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                    n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                     n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                      n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                       n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                        n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                         n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                          n1: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+                           n1: 262144 0x49AFFDE: _PyCFunction_FastCallDict (call.c:586)
+                            n1: 262144 0x4A279D2: _PyEval_EvalFrameDefault (ceval.c:4641)
+                             n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                              n0: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+  n1: 262144 0x510363E: ???
+   n1: 262144 0x10CA5E: ??? (in /usr/local/bin/python3.7)
+    n1: 262144 0x51151B6: ???
+     n1: 262144 0x3000000016: ???
+      n1: 262144 0x1FFEFF831E: ???
+       n1: 262144 0x1CE: ???
+        n1: 262144 0x1A: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49BA7DF: _PyFrame_New_NoTrack (frameobject.c:713)
+              n1: 262144 0x4A2187F: _PyEval_EvalCodeWithName (ceval.c:3691)
+               n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                 n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                  n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                   n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                    n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                     n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                      n1: 262144 0x4A1FE8E: builtin___build_class__ (bltinmodule.c:227)
+                       n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                        n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                         n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                          n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                           n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                            n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                             n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                              n0: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+  n1: 262144 0x52BEFFE: ??? (in /lib/libssl.so.1.1)
+   n1: 262144 0x3FFFE: ???
+    n1: 262144 0x3FEFF737E: ???
+     n0: 262144 0x1BFFE: ???
+  n1: 262144 0x5371A6E: ???
+   n1: 262144 0x4BFF2FE: ???
+    n1: 262144 0x4BFF04E: ???
+     n1: 262144 0x4BFF2FE: ???
+      n1: 262144 0x4: ???
+       n1: 262144 0x196: ???
+        n1: 262144 0x17: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49BA7DF: _PyFrame_New_NoTrack (frameobject.c:713)
+              n1: 262144 0x4A2187F: _PyEval_EvalCodeWithName (ceval.c:3691)
+               n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                n1: 262144 0x4A1FB17: builtin___build_class__ (bltinmodule.c:243)
+                 n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                  n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                   n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                    n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                     n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                      n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                       n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                        n1: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+                         n1: 262144 0x49AFFDE: _PyCFunction_FastCallDict (call.c:586)
+                          n1: 262144 0x4A279D2: _PyEval_EvalFrameDefault (ceval.c:4641)
+                           n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                            n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                             n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x53D39AE: ???
+   n1: 262144 0x74E6840C499B2639: ???
+    n1: 262144 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+     n1: 262144 0x53D39AE: ???
+      n1: 262144 0x51FB01E: ???
+       n1: 262144 0x105: ???
+        n1: 262144 0xE: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49AB67B: PyBytes_FromStringAndSize (bytesobject.c:85)
+            n1: 262144 0x4A3DCBF: r_object (marshal.c:1126)
+             n1: 262144 0x4A3DF79: r_object (marshal.c:1399)
+              n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                  n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                   n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                    n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                     n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                      n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                       n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                        n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                         n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x54699CE: ???
+   n1: 262144 0x4B949C6: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+    n1: 262144 0x5460DCE: ???
+     n1: 262144 0x4BFDE2E: ???
+      n1: 262144 0x421F53E: ???
+       n1: 262144 0xA6: ???
+        n1: 262144 0x8: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49D528D: PyDict_Copy (dictobject.c:627)
+            n1: 262144 0x49EEC5D: type_new (typeobject.c:7293)
+             n1: 262144 0x49EE603: type_call (typeobject.c:951)
+              n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+               n1: 262144 0x4A1FB57: builtin___build_class__ (bltinmodule.c:253)
+                n1: 262144 0x49AFC9A: _PyMethodDef_RawFastCallKeywords (call.c:660)
+                 n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                  n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                   n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                    n1: 262144 0x4A21827: PyEval_EvalCodeEx (ceval.c:3959)
+                     n1: 262144 0x4A217E9: PyEval_EvalCode (ceval.c:524)
+                      n1: 262144 0x4A9D652: builtin_exec (bltinmodule.c:1079)
+                       n1: 262144 0x49B0303: _PyMethodDef_RawFastCallDict (call.c:530)
+                        n1: 262144 0x49AFFDE: _PyCFunction_FastCallDict (call.c:586)
+                         n1: 262144 0x4A279D2: _PyEval_EvalFrameDefault (ceval.c:4641)
+                          n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                           n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                            n1: 262144 0x4A266A0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                              n0: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+  n0: 262144 0x549C44E: ???
+  n1: 262144 0x7466656A: ???
+   n1: 262144 0xC145BE5CDE67CDD6: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x50CBFAE: ???
+      n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+       n1: 262144 0x34: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DBE3: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DFBB: r_object (marshal.c:1408)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                  n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                   n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                    n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                     n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                      n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                       n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                        n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                         n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                          n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                           n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x1FFEFFA712: ???
+   n1: 262144 0x667475300000002E: ???
+    n1: 262144 0x1FFE00385D: ???
+     n1: 262144 0xC145BE5CDE67CDD6: ???
+      n1: 262144 0x51C1ACE: ???
+       n1: 262144 0x8E: ???
+        n1: 262144 0x6: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49B3376: PyCode_New (codeobject.c:187)
+            n1: 262144 0x4A3E0D3: r_object (marshal.c:1430)
+             n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+              n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+               n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                 n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                  n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                   n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                    n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                     n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                      n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                       n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                        n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                         n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                          n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                           n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                            n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                             n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                              n0: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+  n1: 262144 0x1FFEFFB732: ???
+   n1: 262144 0x6674750004A3D1DB: ???
+    n1: 262144 0x400385D: ??? (in /lib/ld-musl-x86_64.so.1)
+     n0: 262144 0x506C0AE: ???
+  n1: 262144 0x1FFEFFBE3E: ???
+   n1: 262144 0x1FFEFFBE2E: ???
+    n1: 262144 0x4D74A9E: ???
+     n1: 262144 0x5081B3E: ???
+      n1: 262144 0x4CB266E: ???
+       n1: 262144 0x159: ???
+        n1: 262144 0x13: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49AB67B: PyBytes_FromStringAndSize (bytesobject.c:85)
+            n1: 262144 0x4A3DCBF: r_object (marshal.c:1126)
+             n1: 262144 0x4A3E70B: r_object (marshal.c:1399)
+              n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+               n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                 n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                  n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                   n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                    n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                     n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                      n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                       n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                        n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                         n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+  n1: 262144 0x1FFEFFCA0E: ???
+   n1: 262144 0x4D37E3E: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0x4BFF0EE: ???
+      n1: 262144 0x4D37E3E: ???
+       n1: 262144 0x56: ???
+        n1: 262144 0x3: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x49ED72F: PyType_GenericAlloc (typeobject.c:992)
+             n1: 262144 0x49B5120: PyDescr_NewWrapper (descrobject.c:722)
+              n1: 262144 0x49EABCE: PyType_Ready (typeobject.c:7451)
+               n1: 262144 0x49EE5BB: type_getattro (typeobject.c:3182)
+                n1: 262144 0x4A22DF4: _PyEval_EvalFrameDefault (ceval.c:2573)
+                 n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                  n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                   n1: 262144 0x4A22EC0: _PyEval_EvalFrameDefault (ceval.c:4616)
+                    n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                     n1: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+                      n1: 262144 0x49AFEF7: _PyObject_FastCallDict (call.c:125)
+                       n1: 262144 0x49B090B: object_vacall (call.c:1202)
+                        n1: 262144 0x49B1FC6: _PyObject_CallMethodIdObjArgs (call.c:1252)
+                         n1: 262144 0x4A62892: _abc__abc_subclasscheck (_abc.c:616)
+                          n1: 262144 0x49AFC59: _PyMethodDef_RawFastCallKeywords (call.c:655)
+                           n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                            n1: 262144 0x4A26541: _PyEval_EvalFrameDefault (ceval.c:4568)
+                             n1: 262144 0x49B1458: _PyFunction_FastCallDict (call.c:283)
+                              n0: 262144 0x49B1A34: _PyObject_Call_Prepend (call.c:908)
+  n1: 262144 0x646F6D666562: ???
+   n1: 262144 0x61E: ???
+    n1: 262144 0xFFFFFFFFFFFFFFFD: ???
+     n1: 262144 0xB3: ???
+      n1: 262144 0x9: ???
+       n1: 262144 0xB3: ???
+        n1: 262144 0x9: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x49F60C8: PyUnicode_New (unicodeobject.c:1322)
+            n1: 262144 0x49F6A28: PyUnicode_FromKindAndData (unicodeobject.c:2216)
+             n1: 262144 0x4A3DA92: r_object (marshal.c:1169)
+              n1: 262144 0x4A3DB53: r_object (marshal.c:1231)
+               n1: 262144 0x4A3DF8F: r_object (marshal.c:1402)
+                n1: 262144 0x4A3DC4D: r_object (marshal.c:1231)
+                 n1: 262144 0x4A3E721: r_object (marshal.c:1402)
+                  n1: 262144 0x4AA3D88: read_object (marshal.c:1488)
+                   n1: 262144 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                    n1: 262144 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                     n1: 262144 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                      n1: 262144 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                       n1: 262144 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                        n1: 262144 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                         n1: 262144 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                          n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                           n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                            n1: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+                             n1: 262144 0x4A22CA8: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 262144 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+  n1: 262144 0x51A9060B0C814100: ???
+   n1: 262144 0x2FE: ???
+    n1: 262144 0x6: ???
+     n1: 262144 0x36: ???
+      n1: 262144 0x1: ???
+       n1: 262144 0x36: ???
+        n1: 262144 0x1: ???
+         n1: 262144 0x4A81167: _PyObject_ArenaMmap (obmalloc.c:143)
+          n1: 262144 0x49DC041: PyObject_Malloc (obmalloc.c:1246)
+           n1: 262144 0x4A57940: _PyObject_GC_Malloc (gcmodule.c:1696)
+            n1: 262144 0x4A578FC: _PyObject_GC_NewVar (gcmodule.c:1747)
+             n1: 262144 0x49E9629: PyTuple_New (tupleobject.c:117)
+              n1: 262144 0x49ED420: PyType_Ready (typeobject.c:5196)
+               n1: 262144 0x4A8089B: _Py_ReadyTypes (object.c:1738)
+                n1: 262144 0x4AA4BB8: _Py_InitializeCore_impl (pylifecycle.c:736)
+                 n1: 262144 0x4AA49FA: _Py_InitializeCore (pylifecycle.c:862)
+                  n1: 262144 0x4AAE304: pymain_init (main.c:3001)
+                   n1: 262144 0x4AAD89A: pymain_main (main.c:3023)
+                    n1: 262144 0x4AAD84A: _Py_UnixMain (main.c:3063)
+                     n1: 262144 0x401E13B: (below main) (in /lib/ld-musl-x86_64.so.1)
+                      n0: 262144 0x109063: main (python.c:15)
+ n1: 1941504 0x402432D: __expand_heap (in /lib/ld-musl-x86_64.so.1)
+  n0: 1040384 in 61 places, all below massif's threshold (1.00%)
+ n0: 643072 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=273167354
+mem_heap_B=23629824
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=279713045
+mem_heap_B=23662592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=284175202
+mem_heap_B=23920640
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=289200824
+mem_heap_B=23982080
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=293310128
+mem_heap_B=24039424
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=299399062
+mem_heap_B=24936448
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=302018961
+mem_heap_B=25198592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=310826835
+mem_heap_B=25460736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=320895061
+mem_heap_B=25722880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=325920340
+mem_heap_B=25952256
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=332507745
+mem_heap_B=26275840
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n4: 26275840 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n8: 22761472 0x4036755: mmap (in /lib/ld-musl-x86_64.so.1)
+  n0: 7933952 in 101 places, all below massif's threshold (1.00%)
+  n1: 1896448 0x48F6FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 1896448 0x1CEFFE: ???
+    n1: 1896448 0x3FF00083E: ???
+     n0: 1896448 0x5EFFE: ???
+  n1: 1409024 0x4E0BFFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 1409024 0x157FFE: ???
+    n1: 1409024 0x3FEFFD89E: ???
+     n0: 1409024 0x74FFE: ???
+  n1: 786432 0x4C78A28: ???
+   n0: 786432 in 3 places, all below massif's threshold (1.00%)
+  n1: 684032 0x4AC5FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 684032 0xA6FFE: ???
+    n1: 684032 0x3FF00083E: ???
+     n0: 684032 0x22DFFE: ???
+  n1: 585728 0x4B6DFFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 585728 0x8EFFE: ???
+    n1: 585728 0x3FF00083E: ???
+     n0: 585728 0x2D4FFE: ???
+  n1: 528384 0x4F63FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 528384 0x80FFE: ???
+    n1: 528384 0x3FEFFD89E: ???
+     n0: 528384 0x1CCFFE: ???
+  n1: 299008 0x4BF8BFE: ???
+   n1: 299008 0x49FD828: unicode_rstrip (unicodeobject.c:12454)
+    n1: 299008 0x4803E: ???
+     n1: 299008 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+      n1: 299008 0x1FFEFF7D7E: ???
+       n1: 299008 0x4C3B90E: ???
+        n1: 299008 0x48016: ???
+         n1: 299008 0x3FFEE: ???
+          n1: 299008 0x4BFF0EE: ???
+           n1: 299008 0x4105A9E: ???
+            n1: 299008 0x3FFE: ???
+             n1: 299008 0x7FFE: ???
+              n1: 299008 0x49DBF36: PyObject_Malloc (obmalloc.c:1585)
+               n1: 299008 0x49D2847: dictresize (dictobject.c:534)
+                n1: 299008 0x49D20E1: PyDict_SetDefault (dictobject.c:994)
+                 n1: 299008 0x49F65E1: PyUnicode_InternInPlace (unicodeobject.c:15292)
+                  n1: 299008 0x4A3DAB6: r_object (marshal.c:1173)
+                   n1: 299008 0x4A3DC07: r_object (marshal.c:1231)
+                    n1: 299008 0x4A3DC4D: r_object (marshal.c:1231)
+                     n1: 299008 0x4A3E721: r_object (marshal.c:1402)
+                      n1: 299008 0x4AA3D88: read_object (marshal.c:1488)
+                       n1: 299008 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                        n1: 299008 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                         n1: 299008 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                          n1: 299008 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                           n1: 299008 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                            n1: 299008 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                             n1: 299008 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 299008 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+ n1: 2871296 0x402432D: __expand_heap (in /lib/ld-musl-x86_64.so.1)
+  n0: 1097728 in 64 places, all below massif's threshold (1.00%)
+ n0: 643072 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=363705652
+mem_heap_B=26296320
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=368928398
+mem_heap_B=26583040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=370756496
+mem_heap_B=28823552
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=378957251
+mem_heap_B=29224960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=380615145
+mem_heap_B=29818880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=380785282
+mem_heap_B=29818880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n4: 29818880 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n10: 26013696 0x4036755: mmap (in /lib/ld-musl-x86_64.so.1)
+  n0: 8597504 in 105 places, all below massif's threshold (1.00%)
+  n1: 1896448 0x48F6FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 1896448 0x1CEFFE: ???
+    n1: 1896448 0x3FF00083E: ???
+     n0: 1896448 0x5EFFE: ???
+  n1: 1409024 0x4E0BFFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 1409024 0x157FFE: ???
+    n1: 1409024 0x3FEFFD89E: ???
+     n0: 1409024 0x74FFE: ???
+  n1: 921600 0x57DFFFE: ??? (in /usr/local/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so)
+   n1: 921600 0xE0FFE: ???
+    n1: 921600 0x3FEFFB4CE: ???
+     n0: 921600 0x6FFE: ???
+  n1: 786432 0x4C78A28: ???
+   n0: 786432 in 3 places, all below massif's threshold (1.00%)
+  n1: 684032 0x4AC5FFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 684032 0xA6FFE: ???
+    n1: 684032 0x3FF00083E: ???
+     n0: 684032 0x22DFFE: ???
+  n1: 593920 0x0: ???
+   n1: 593920 0x4BFD04E: ???
+    n1: 593920 0x0: ???
+     n1: 593920 0x0: ???
+      n1: 593920 0x0: ???
+       n1: 593920 0x90FFE: ???
+        n1: 593920 0x7FFF6: ???
+         n1: 593920 0x4024A19: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 593920 0x4C3517E: ???
+           n1: 593920 0x9003E: ???
+            n1: 593920 0x1FFFFFFFF: ???
+             n0: 593920 0x1FFFFFFFE: ???
+  n1: 585728 0x4B6DFFE: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+   n1: 585728 0x8EFFE: ???
+    n1: 585728 0x3FF00083E: ???
+     n0: 585728 0x2D4FFE: ???
+  n1: 528384 0x4F63FFE: ??? (in /lib/libcrypto.so.1.1)
+   n1: 528384 0x80FFE: ???
+    n1: 528384 0x3FEFFD89E: ???
+     n0: 528384 0x1CCFFE: ???
+  n1: 299008 0x4BF8BFE: ???
+   n1: 299008 0x49FD828: unicode_rstrip (unicodeobject.c:12454)
+    n1: 299008 0x4803E: ???
+     n1: 299008 0x4B9951E: ??? (in /usr/local/lib/libpython3.7m.so.1.0)
+      n1: 299008 0x1FFEFF7D7E: ???
+       n1: 299008 0x4C3B90E: ???
+        n1: 299008 0x48016: ???
+         n1: 299008 0x3FFEE: ???
+          n1: 299008 0x4BFF0EE: ???
+           n1: 299008 0x4105A9E: ???
+            n1: 299008 0x3FFE: ???
+             n1: 299008 0x7FFE: ???
+              n1: 299008 0x49DBF36: PyObject_Malloc (obmalloc.c:1585)
+               n1: 299008 0x49D2847: dictresize (dictobject.c:534)
+                n1: 299008 0x49D20E1: PyDict_SetDefault (dictobject.c:994)
+                 n1: 299008 0x49F65E1: PyUnicode_InternInPlace (unicodeobject.c:15292)
+                  n1: 299008 0x4A3DAB6: r_object (marshal.c:1173)
+                   n1: 299008 0x4A3DC07: r_object (marshal.c:1231)
+                    n1: 299008 0x4A3DC4D: r_object (marshal.c:1231)
+                     n1: 299008 0x4A3E721: r_object (marshal.c:1402)
+                      n1: 299008 0x4AA3D88: read_object (marshal.c:1488)
+                       n1: 299008 0x4AA3D1F: marshal_loads (marshal.c:1800)
+                        n1: 299008 0x49AFB34: _PyMethodDef_RawFastCallKeywords (call.c:648)
+                         n1: 299008 0x49AFA7E: _PyCFunction_FastCallKeywords (call.c:734)
+                          n1: 299008 0x4A26AF4: _PyEval_EvalFrameDefault (ceval.c:4568)
+                           n1: 299008 0x4A21B1F: _PyEval_EvalCodeWithName (ceval.c:3930)
+                            n1: 299008 0x49B0CE0: _PyFunction_FastCallKeywords (call.c:433)
+                             n1: 299008 0x4A23792: _PyEval_EvalFrameDefault (ceval.c:4616)
+                              n0: 299008 0x49B0C38: _PyFunction_FastCallKeywords (call.c:283)
+ n1: 3162112 0x402432D: __expand_heap (in /lib/ld-musl-x86_64.so.1)
+  n0: 1204224 in 66 places, all below massif's threshold (1.00%)
+ n0: 643072 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=392237660
+mem_heap_B=29782016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=5011346969
+mem_heap_B=29777920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

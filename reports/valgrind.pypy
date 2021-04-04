@@ -1,0 +1,862 @@
+desc: --pages-as-heap=yes --massif-out-file=/reports/valgrind.pypy
+cmd: pypy3 main.py
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=4096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=30687128
+mem_heap_B=108298240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=88647980
+mem_heap_B=115101696
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n2: 115101696 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n4: 114089984 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
+   n1: 61444096 0x1FFF0006EF: ???
+    n1: 61444096 0x1FFF0000FF: ???
+     n1: 61444096 0x1FFF00057F: ???
+      n0: 61444096 0x3A98FFF: ???
+   n1: 21639168 0x25F4FFF: ???
+    n1: 21639168 0x1FFF0001A7: ???
+     n1: 21639168 0x1FFF00057F: ???
+      n0: 21639168 0x3A98FFF: ???
+   n1: 18313216 0x115FFFF: ???
+    n1: 18313216 0x1FFF000137: ???
+     n1: 18313216 0x1FFF00057F: ???
+      n0: 18313216 0x3A98FFF: ???
+   n1: 3268608 0x22D6FFF: ???
+    n1: 3268608 0x1FFF00016F: ???
+     n1: 3268608 0x1FFF00057F: ???
+      n0: 3268608 0x3A98FFF: ???
+  n1: 4333568 0x4095C1F: ???
+   n1: 4333568 0x1F: ???
+    n1: 4333568 0x421FFF: ???
+     n1: 4333568 0x3FFFFF: ???
+      n1: 4333568 0x3FFFFF: ???
+       n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n1: 4333568 0x40A601F: ???
+         n1: 4333568 0x40231B7: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 4333568 0x853901F: ???
+           n1: 4333568 0x42101F: ???
+            n1: 4333568 0xFFFFFFFBFFFFFFFE: ???
+             n1: 4333568 0x690A242: pypy_g_time (in /usr/local/bin/libpypy3-c.so)
+              n1: 4333568 0x3FFFFF: ???
+               n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+                n1: 4333568 0x40A601F: ???
+                 n1: 4333568 0x409C01F: ???
+                  n1: 4333568 0x68DC358: pypy_g_IncrementalMiniMarkGC_allocate_nursery (in /usr/local/bin/libpypy3-c.so)
+                   n1: 4333568 0x68EEC1A: pypy_g_IncrementalMiniMarkGC_setup (in /usr/local/bin/libpypy3-c.so)
+                    n1: 4333568 0x68F5F6C: pypy_g_frameworkgc_setup (in /usr/local/bin/libpypy3-c.so)
+                     n1: 4333568 0x5A019DD: RPython_StartupCode (in /usr/local/bin/libpypy3-c.so)
+                      n1: 4333568 0x6B6A2D7: pypy_main_startup (in /usr/local/bin/libpypy3-c.so)
+                       n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
+                        n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
+                         n0: 4333568 0x1FFF000BFF: ???
+  n0: 3600384 in 12 places, all below massif's threshold (1.00%)
+  n1: 1314816 0x4092ACF: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 1314816 0x2: ???
+    n1: 1314816 0x140FFF: ???
+     n1: 1314816 0x1FFF000C07: ???
+      n1: 1314816 0x1FFF000C07: ???
+       n0: 1314816 0x1FFF000C1F: ???
+ n0: 1011712 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=117165731
+mem_heap_B=115949568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 115949568 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n4: 114614272 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
+   n1: 61444096 0x1FFF0006EF: ???
+    n1: 61444096 0x1FFF0000FF: ???
+     n1: 61444096 0x1FFF00057F: ???
+      n0: 61444096 0x3A98FFF: ???
+   n1: 21639168 0x25F4FFF: ???
+    n1: 21639168 0x1FFF0001A7: ???
+     n1: 21639168 0x1FFF00057F: ???
+      n0: 21639168 0x3A98FFF: ???
+   n1: 18313216 0x115FFFF: ???
+    n1: 18313216 0x1FFF000137: ???
+     n1: 18313216 0x1FFF00057F: ???
+      n0: 18313216 0x3A98FFF: ???
+   n1: 3268608 0x22D6FFF: ???
+    n1: 3268608 0x1FFF00016F: ???
+     n1: 3268608 0x1FFF00057F: ???
+      n0: 3268608 0x3A98FFF: ???
+  n1: 4333568 0x4095C1F: ???
+   n1: 4333568 0x1F: ???
+    n1: 4333568 0x421FFF: ???
+     n1: 4333568 0x3FFFFF: ???
+      n1: 4333568 0x3FFFFF: ???
+       n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n1: 4333568 0x40A601F: ???
+         n1: 4333568 0x40231B7: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 4333568 0x853901F: ???
+           n1: 4333568 0x42101F: ???
+            n1: 4333568 0xFFFFFFFBFFFFFFFE: ???
+             n1: 4333568 0x690A242: pypy_g_time (in /usr/local/bin/libpypy3-c.so)
+              n1: 4333568 0x3FFFFF: ???
+               n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+                n1: 4333568 0x40A601F: ???
+                 n1: 4333568 0x409C01F: ???
+                  n1: 4333568 0x68DC358: pypy_g_IncrementalMiniMarkGC_allocate_nursery (in /usr/local/bin/libpypy3-c.so)
+                   n1: 4333568 0x68EEC1A: pypy_g_IncrementalMiniMarkGC_setup (in /usr/local/bin/libpypy3-c.so)
+                    n1: 4333568 0x68F5F6C: pypy_g_frameworkgc_setup (in /usr/local/bin/libpypy3-c.so)
+                     n1: 4333568 0x5A019DD: RPython_StartupCode (in /usr/local/bin/libpypy3-c.so)
+                      n1: 4333568 0x6B6A2D7: pypy_main_startup (in /usr/local/bin/libpypy3-c.so)
+                       n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
+                        n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
+                         n0: 4333568 0x1FFF000BFF: ???
+  n0: 4124672 in 13 places, all below massif's threshold (1.00%)
+  n1: 1314816 0x4092ACF: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 1314816 0x2: ???
+    n1: 1314816 0x140FFF: ???
+     n1: 1314816 0x1FFF000C07: ???
+      n1: 1314816 0x1FFF000C07: ???
+       n0: 1314816 0x1FFF000C1F: ???
+ n0: 1335296 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=151191077
+mem_heap_B=117260288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=181288219
+mem_heap_B=117264384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=217097597
+mem_heap_B=125001728
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=255281559
+mem_heap_B=125009920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=286318356
+mem_heap_B=125718528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=327674439
+mem_heap_B=126300160
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=351530194
+mem_heap_B=127000576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=392073200
+mem_heap_B=127631360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=425710589
+mem_heap_B=128307200
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=454542468
+mem_heap_B=128835584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=488242990
+mem_heap_B=128905216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=520407680
+mem_heap_B=129720320
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=557394193
+mem_heap_B=130285568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=591394601
+mem_heap_B=130289664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=617207588
+mem_heap_B=130572288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=651039598
+mem_heap_B=131809280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=684882485
+mem_heap_B=132337664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 132337664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 127762432 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
+   n1: 61444096 0x1FFF0006EF: ???
+    n1: 61444096 0x1FFF0000FF: ???
+     n1: 61444096 0x1FFF00057F: ???
+      n0: 61444096 0x3A98FFF: ???
+   n1: 21639168 0x25F4FFF: ???
+    n1: 21639168 0x1FFF0001A7: ???
+     n1: 21639168 0x1FFF00057F: ???
+      n0: 21639168 0x3A98FFF: ???
+   n1: 18313216 0x115FFFF: ???
+    n1: 18313216 0x1FFF000137: ???
+     n1: 18313216 0x1FFF00057F: ???
+      n0: 18313216 0x3A98FFF: ???
+   n1: 3268608 0x22D6FFF: ???
+    n1: 3268608 0x1FFF00016F: ???
+     n1: 3268608 0x1FFF00057F: ???
+      n0: 3268608 0x3A98FFF: ???
+  n0: 8556544 in 23 places, all below massif's threshold (1.00%)
+  n1: 4755456 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 4755456 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n1: 4755456 0x80FFF: ???
+     n0: 4755456 in 6 places, all below massif's threshold (1.00%)
+  n3: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
+   n1: 2605056 0x1FFEFFBBCF: ???
+    n1: 2605056 0x1FFEFFB5DF: ???
+     n1: 2605056 0x1FFEFFBA5F: ???
+      n0: 2605056 0x27BFFF: ???
+   n1: 1388544 0x74FFF: ???
+    n1: 1388544 0x1FFEFFB617: ???
+     n1: 1388544 0x1FFEFFBA5F: ???
+      n0: 1388544 0x27BFFF: ???
+   n0: 737280 in 2 places, all below massif's threshold (1.00%)
+  n1: 4333568 0x4095C1F: ???
+   n1: 4333568 0x1F: ???
+    n1: 4333568 0x421FFF: ???
+     n1: 4333568 0x3FFFFF: ???
+      n1: 4333568 0x3FFFFF: ???
+       n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n1: 4333568 0x40A601F: ???
+         n1: 4333568 0x40231B7: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 4333568 0x853901F: ???
+           n1: 4333568 0x42101F: ???
+            n1: 4333568 0xFFFFFFFBFFFFFFFE: ???
+             n1: 4333568 0x690A242: pypy_g_time (in /usr/local/bin/libpypy3-c.so)
+              n1: 4333568 0x3FFFFF: ???
+               n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+                n1: 4333568 0x40A601F: ???
+                 n1: 4333568 0x409C01F: ???
+                  n1: 4333568 0x68DC358: pypy_g_IncrementalMiniMarkGC_allocate_nursery (in /usr/local/bin/libpypy3-c.so)
+                   n1: 4333568 0x68EEC1A: pypy_g_IncrementalMiniMarkGC_setup (in /usr/local/bin/libpypy3-c.so)
+                    n1: 4333568 0x68F5F6C: pypy_g_frameworkgc_setup (in /usr/local/bin/libpypy3-c.so)
+                     n1: 4333568 0x5A019DD: RPython_StartupCode (in /usr/local/bin/libpypy3-c.so)
+                      n1: 4333568 0x6B6A2D7: pypy_main_startup (in /usr/local/bin/libpypy3-c.so)
+                       n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
+                        n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
+                         n0: 4333568 0x1FFF000BFF: ???
+ n1: 3923968 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 3756032 in 83 places, all below massif's threshold (1.00%)
+ n0: 651264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=720036429
+mem_heap_B=132632576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=779577720
+mem_heap_B=132923392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=811564187
+mem_heap_B=133709824
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=844258821
+mem_heap_B=135094272
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=871905696
+mem_heap_B=135127040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=906198448
+mem_heap_B=137072640
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=964227257
+mem_heap_B=137166848
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=997180689
+mem_heap_B=138039296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1027606030
+mem_heap_B=138731520
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1084947157
+mem_heap_B=139116544
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1116352213
+mem_heap_B=139698176
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1157278224
+mem_heap_B=139931648
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1196046023
+mem_heap_B=140541952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1223600362
+mem_heap_B=140554240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1282779762
+mem_heap_B=140578816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 140578816 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 132890624 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
+   n1: 61444096 0x1FFF0006EF: ???
+    n1: 61444096 0x1FFF0000FF: ???
+     n1: 61444096 0x1FFF00057F: ???
+      n0: 61444096 0x3A98FFF: ???
+   n1: 21639168 0x25F4FFF: ???
+    n1: 21639168 0x1FFF0001A7: ???
+     n1: 21639168 0x1FFF00057F: ???
+      n0: 21639168 0x3A98FFF: ???
+   n1: 18313216 0x115FFFF: ???
+    n1: 18313216 0x1FFF000137: ???
+     n1: 18313216 0x1FFF00057F: ???
+      n0: 18313216 0x3A98FFF: ???
+   n1: 3268608 0x22D6FFF: ???
+    n1: 3268608 0x1FFF00016F: ???
+     n1: 3268608 0x1FFF00057F: ???
+      n0: 3268608 0x3A98FFF: ???
+  n0: 9986048 in 28 places, all below massif's threshold (1.00%)
+  n1: 8454144 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 8454144 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n3: 8454144 0x80FFF: ???
+     n0: 5283840 in 8 places, all below massif's threshold (1.00%)
+     n1: 1585152 0x1: ???
+      n1: 1585152 0x8326C9F: ???
+       n0: 1585152 in 2 places, all below massif's threshold (1.00%)
+     n1: 1585152 0x1A: ???
+      n1: 1585152 0x8326C9F: ???
+       n1: 1585152 0x729507F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n0: 1585152 in 3 places, all below massif's threshold (1.00%)
+  n2: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
+   n1: 2605056 0x1FFEFFBBCF: ???
+    n1: 2605056 0x1FFEFFB5DF: ???
+     n1: 2605056 0x1FFEFFBA5F: ???
+      n0: 2605056 0x27BFFF: ???
+   n0: 2125824 in 3 places, all below massif's threshold (1.00%)
+  n1: 4333568 0x4095C1F: ???
+   n1: 4333568 0x1F: ???
+    n1: 4333568 0x421FFF: ???
+     n1: 4333568 0x3FFFFF: ???
+      n1: 4333568 0x3FFFFF: ???
+       n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n1: 4333568 0x40A601F: ???
+         n1: 4333568 0x40231B7: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 4333568 0x853901F: ???
+           n1: 4333568 0x42101F: ???
+            n1: 4333568 0xFFFFFFFBFFFFFFFE: ???
+             n1: 4333568 0x690A242: pypy_g_time (in /usr/local/bin/libpypy3-c.so)
+              n1: 4333568 0x3FFFFF: ???
+               n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+                n1: 4333568 0x40A601F: ???
+                 n1: 4333568 0x409C01F: ???
+                  n1: 4333568 0x68DC358: pypy_g_IncrementalMiniMarkGC_allocate_nursery (in /usr/local/bin/libpypy3-c.so)
+                   n1: 4333568 0x68EEC1A: pypy_g_IncrementalMiniMarkGC_setup (in /usr/local/bin/libpypy3-c.so)
+                    n1: 4333568 0x68F5F6C: pypy_g_frameworkgc_setup (in /usr/local/bin/libpypy3-c.so)
+                     n1: 4333568 0x5A019DD: RPython_StartupCode (in /usr/local/bin/libpypy3-c.so)
+                      n1: 4333568 0x6B6A2D7: pypy_main_startup (in /usr/local/bin/libpypy3-c.so)
+                       n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
+                        n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
+                         n0: 4333568 0x1FFF000BFF: ???
+ n2: 7036928 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 5128192 in 109 places, all below massif's threshold (1.00%)
+  n1: 1622016 0x100002F47: ???
+   n0: 1622016 in 127 places, all below massif's threshold (1.00%)
+ n0: 651264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=1318326064
+mem_heap_B=140918784
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1352912216
+mem_heap_B=140931072
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1385986502
+mem_heap_B=140955648
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1438714910
+mem_heap_B=141873152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1469145939
+mem_heap_B=141877248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1500778793
+mem_heap_B=141910016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1557723351
+mem_heap_B=141946880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 141946880 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 133419008 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
+   n1: 61444096 0x1FFF0006EF: ???
+    n1: 61444096 0x1FFF0000FF: ???
+     n1: 61444096 0x1FFF00057F: ???
+      n0: 61444096 0x3A98FFF: ???
+   n1: 21639168 0x25F4FFF: ???
+    n1: 21639168 0x1FFF0001A7: ???
+     n1: 21639168 0x1FFF00057F: ???
+      n0: 21639168 0x3A98FFF: ???
+   n1: 18313216 0x115FFFF: ???
+    n1: 18313216 0x1FFF000137: ???
+     n1: 18313216 0x1FFF00057F: ???
+      n0: 18313216 0x3A98FFF: ???
+   n1: 3268608 0x22D6FFF: ???
+    n1: 3268608 0x1FFF00016F: ???
+     n1: 3268608 0x1FFF00057F: ???
+      n0: 3268608 0x3A98FFF: ???
+  n0: 10514432 in 29 places, all below massif's threshold (1.00%)
+  n1: 8454144 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 8454144 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n3: 8454144 0x80FFF: ???
+     n0: 5283840 in 8 places, all below massif's threshold (1.00%)
+     n1: 1585152 0x1: ???
+      n1: 1585152 0x8326C9F: ???
+       n0: 1585152 in 2 places, all below massif's threshold (1.00%)
+     n1: 1585152 0x1A: ???
+      n1: 1585152 0x8326C9F: ???
+       n1: 1585152 0x729507F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n0: 1585152 in 3 places, all below massif's threshold (1.00%)
+  n2: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
+   n1: 2605056 0x1FFEFFBBCF: ???
+    n1: 2605056 0x1FFEFFB5DF: ???
+     n1: 2605056 0x1FFEFFBA5F: ???
+      n0: 2605056 0x27BFFF: ???
+   n0: 2125824 in 3 places, all below massif's threshold (1.00%)
+  n1: 4333568 0x4095C1F: ???
+   n1: 4333568 0x1F: ???
+    n1: 4333568 0x421FFF: ???
+     n1: 4333568 0x3FFFFF: ???
+      n1: 4333568 0x3FFFFF: ???
+       n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n1: 4333568 0x40A601F: ???
+         n1: 4333568 0x40231B7: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 4333568 0x853901F: ???
+           n1: 4333568 0x42101F: ???
+            n1: 4333568 0xFFFFFFFBFFFFFFFE: ???
+             n1: 4333568 0x690A242: pypy_g_time (in /usr/local/bin/libpypy3-c.so)
+              n1: 4333568 0x3FFFFF: ???
+               n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+                n1: 4333568 0x40A601F: ???
+                 n1: 4333568 0x409C01F: ???
+                  n1: 4333568 0x68DC358: pypy_g_IncrementalMiniMarkGC_allocate_nursery (in /usr/local/bin/libpypy3-c.so)
+                   n1: 4333568 0x68EEC1A: pypy_g_IncrementalMiniMarkGC_setup (in /usr/local/bin/libpypy3-c.so)
+                    n1: 4333568 0x68F5F6C: pypy_g_frameworkgc_setup (in /usr/local/bin/libpypy3-c.so)
+                     n1: 4333568 0x5A019DD: RPython_StartupCode (in /usr/local/bin/libpypy3-c.so)
+                      n1: 4333568 0x6B6A2D7: pypy_main_startup (in /usr/local/bin/libpypy3-c.so)
+                       n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
+                        n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
+                         n0: 4333568 0x1FFF000BFF: ???
+ n2: 7876608 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 5967872 in 116 places, all below massif's threshold (1.00%)
+  n1: 1622016 0x100002F47: ???
+   n0: 1622016 in 127 places, all below massif's threshold (1.00%)
+ n0: 651264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=1604818823
+mem_heap_B=142778368
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1632265362
+mem_heap_B=142798848
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1679613886
+mem_heap_B=143503360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1732807126
+mem_heap_B=144556032
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2009513559
+mem_heap_B=146137088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2041166864
+mem_heap_B=146661376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2278463213
+mem_heap_B=147189760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2372658895
+mem_heap_B=148238336
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2533973611
+mem_heap_B=148766720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2850814853
+mem_heap_B=149295104
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2968947469
+mem_heap_B=150872064
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 150872064 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 141836288 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
+   n1: 61444096 0x1FFF0006EF: ???
+    n1: 61444096 0x1FFF0000FF: ???
+     n1: 61444096 0x1FFF00057F: ???
+      n0: 61444096 0x3A98FFF: ???
+   n1: 21639168 0x25F4FFF: ???
+    n1: 21639168 0x1FFF0001A7: ???
+     n1: 21639168 0x1FFF00057F: ???
+      n0: 21639168 0x3A98FFF: ???
+   n1: 18313216 0x115FFFF: ???
+    n1: 18313216 0x1FFF000137: ???
+     n1: 18313216 0x1FFF00057F: ???
+      n0: 18313216 0x3A98FFF: ???
+   n1: 3268608 0x22D6FFF: ???
+    n1: 3268608 0x1FFF00016F: ???
+     n1: 3268608 0x1FFF00057F: ???
+      n0: 3268608 0x3A98FFF: ???
+  n0: 17739776 in 42 places, all below massif's threshold (1.00%)
+  n1: 8454144 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 8454144 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n3: 8454144 0x80FFF: ???
+     n0: 5283840 in 8 places, all below massif's threshold (1.00%)
+     n1: 1585152 0x1: ???
+      n1: 1585152 0x8326C9F: ???
+       n0: 1585152 in 2 places, all below massif's threshold (1.00%)
+     n1: 1585152 0x1A: ???
+      n1: 1585152 0x8326C9F: ???
+       n1: 1585152 0x729507F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n0: 1585152 in 3 places, all below massif's threshold (1.00%)
+  n2: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
+   n1: 2605056 0x1FFEFFBBCF: ???
+    n1: 2605056 0x1FFEFFB5DF: ???
+     n1: 2605056 0x1FFEFFBA5F: ???
+      n0: 2605056 0x27BFFF: ???
+   n0: 2125824 in 3 places, all below massif's threshold (1.00%)
+  n1: 4333568 0x4095C1F: ???
+   n1: 4333568 0x1F: ???
+    n1: 4333568 0x421FFF: ???
+     n1: 4333568 0x3FFFFF: ???
+      n1: 4333568 0x3FFFFF: ???
+       n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+        n1: 4333568 0x40A601F: ???
+         n1: 4333568 0x40231B7: malloc (in /lib/ld-musl-x86_64.so.1)
+          n1: 4333568 0x853901F: ???
+           n1: 4333568 0x42101F: ???
+            n1: 4333568 0xFFFFFFFBFFFFFFFE: ???
+             n1: 4333568 0x690A242: pypy_g_time (in /usr/local/bin/libpypy3-c.so)
+              n1: 4333568 0x3FFFFF: ???
+               n1: 4333568 0x72E279F: ??? (in /usr/local/bin/libpypy3-c.so)
+                n1: 4333568 0x40A601F: ???
+                 n1: 4333568 0x409C01F: ???
+                  n1: 4333568 0x68DC358: pypy_g_IncrementalMiniMarkGC_allocate_nursery (in /usr/local/bin/libpypy3-c.so)
+                   n1: 4333568 0x68EEC1A: pypy_g_IncrementalMiniMarkGC_setup (in /usr/local/bin/libpypy3-c.so)
+                    n1: 4333568 0x68F5F6C: pypy_g_frameworkgc_setup (in /usr/local/bin/libpypy3-c.so)
+                     n1: 4333568 0x5A019DD: RPython_StartupCode (in /usr/local/bin/libpypy3-c.so)
+                      n1: 4333568 0x6B6A2D7: pypy_main_startup (in /usr/local/bin/libpypy3-c.so)
+                       n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
+                        n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
+                         n0: 4333568 0x1FFF000BFF: ???
+ n3: 8384512 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 4825088 in 118 places, all below massif's threshold (1.00%)
+  n1: 1622016 0x100002F47: ???
+   n0: 1622016 in 127 places, all below massif's threshold (1.00%)
+  n1: 1576960 0x10001500F: ???
+   n0: 1576960 in 11 places, all below massif's threshold (1.00%)
+ n0: 651264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=3097479209
+mem_heap_B=152969216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=3157987369
+mem_heap_B=153497600
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3498162269
+mem_heap_B=154025984
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=3800639011
+mem_heap_B=154554368
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=4011684134
+mem_heap_B=155082752
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=4241812697
+mem_heap_B=157179904
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=4500281366
+mem_heap_B=158236672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=7325774803
+mem_heap_B=158765056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,6 @@
+language,command,mem_heap,mem_heap_extra,mem_stack,mem_total
+python,python main.py,29818880,0,0,29818880
+pypy,pypy3 main.py,115101696,0,0,115101696
+node,node main.js,253648896,0,0,253648896
+golang,/app/main,1593344,0,0,1593344
+php,php main.php,35454976,0,0,35454976

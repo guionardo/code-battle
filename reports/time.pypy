@@ -1,18 +1,18 @@
-	Command being timed: "python main.py"
-	User time (seconds): 2.11
-	System time (seconds): 0.23
-	Percent of CPU this job got: 91%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 2.56s
+	Command being timed: "pypy3 main.py"
+	User time (seconds): 5.20
+	System time (seconds): 0.28
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 5.72s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 74144
+	Maximum resident set size (kbytes): 392688
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 3522
-	Voluntary context switches: 1990
-	Involuntary context switches: 532
+	Minor (reclaiming a frame) page faults: 15510
+	Voluntary context switches: 1899
+	Involuntary context switches: 957
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

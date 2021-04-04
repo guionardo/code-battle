@@ -5,8 +5,7 @@ function get_random_int(){
 }
 
 function request($url) {
-    $response = file_get_contents($url."?q=".get_random_int());
-    echo "$response\n";
+    $response = file_get_contents($url."?q=".get_random_int());    
 }
 
 function main(){

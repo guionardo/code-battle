@@ -1,7 +1,7 @@
 [
     {
-        "Id": "f0bc67053964f831aee654235df09a4ef106b356398551e5f799148da6a3f1d5",
-        "Created": "2021-04-02T04:52:57.75393313Z",
+        "Id": "ecc5bb5aeefc2b46e38076579aede5873cc0ca3c975fb5243737d0965599bc86",
+        "Created": "2021-04-04T01:01:14.021466114Z",
         "Path": "sh",
         "Args": [
             "timing.sh",
@@ -18,14 +18,14 @@
             "Pid": 0,
             "ExitCode": 0,
             "Error": "",
-            "StartedAt": "2021-04-03T11:34:06.192242465Z",
-            "FinishedAt": "2021-04-03T11:34:08.81212634Z"
+            "StartedAt": "2021-04-04T01:03:24.581519166Z",
+            "FinishedAt": "2021-04-04T01:03:43.645879031Z"
         },
-        "Image": "sha256:efe9bd48aff2db50cd51eec8f4af90a8e4716e00598cde1f1547a57c543d3b70",
-        "ResolvConfPath": "/var/lib/docker/containers/f0bc67053964f831aee654235df09a4ef106b356398551e5f799148da6a3f1d5/resolv.conf",
-        "HostnamePath": "/var/lib/docker/containers/f0bc67053964f831aee654235df09a4ef106b356398551e5f799148da6a3f1d5/hostname",
-        "HostsPath": "/var/lib/docker/containers/f0bc67053964f831aee654235df09a4ef106b356398551e5f799148da6a3f1d5/hosts",
-        "LogPath": "/var/lib/docker/containers/f0bc67053964f831aee654235df09a4ef106b356398551e5f799148da6a3f1d5/f0bc67053964f831aee654235df09a4ef106b356398551e5f799148da6a3f1d5-json.log",
+        "Image": "sha256:b7f4a0bc32a11a8e9d228ddcbe1a76a8884436f497c3fe2b8ccd0468a1ebaf40",
+        "ResolvConfPath": "/var/lib/docker/containers/ecc5bb5aeefc2b46e38076579aede5873cc0ca3c975fb5243737d0965599bc86/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/ecc5bb5aeefc2b46e38076579aede5873cc0ca3c975fb5243737d0965599bc86/hostname",
+        "HostsPath": "/var/lib/docker/containers/ecc5bb5aeefc2b46e38076579aede5873cc0ca3c975fb5243737d0965599bc86/hosts",
+        "LogPath": "/var/lib/docker/containers/ecc5bb5aeefc2b46e38076579aede5873cc0ca3c975fb5243737d0965599bc86/ecc5bb5aeefc2b46e38076579aede5873cc0ca3c975fb5243737d0965599bc86-json.log",
         "Name": "/code-battle-python",
         "RestartCount": 0,
         "Driver": "overlay2",
@@ -36,6 +36,7 @@
         "ExecIDs": null,
         "HostConfig": {
             "Binds": [
+                "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache:/apk_cache:rw",
                 "/home/guionardo/dev/github.com/guionardo/code-battle/reports:/reports:rw"
             ],
             "ContainerIDFile": "",
@@ -55,9 +56,9 @@
             "CapAdd": null,
             "CapDrop": null,
             "CgroupnsMode": "host",
-            "Dns": [],
-            "DnsOptions": [],
-            "DnsSearch": [],
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
             "ExtraHosts": null,
             "GroupAdd": null,
             "IpcMode": "shareable",
@@ -131,14 +132,22 @@
         },
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/74c24303379de9156251338b098f919dc643b3e393b7d5be9c7bc275a0f75105-init/diff:/var/lib/docker/overlay2/cef88ef070bb6f2dee88dc4301a068fae1568cfa972b9a872aef95cef4f65c47/diff:/var/lib/docker/overlay2/51f89a6ec65149587fa077000be60ab490175f99ac52eb45a19bb71a7c29b934/diff:/var/lib/docker/overlay2/3037ef9603231d3c0a45974d279fcb63d5a91b1d8a2e427a31a99b231358e3af/diff:/var/lib/docker/overlay2/9de1a6c1f4e48368829f7a2fe2537b44642ca48bc569f80575368193435e15a9/diff:/var/lib/docker/overlay2/4dc37a17dc495f3812eeff62410a3cdc45e4f5902cd3662d4d49a8b398ef53f2/diff:/var/lib/docker/overlay2/067e16071d6519575b6e578ded0f1fc3f35ea2c50e6c688b7fca18497e8b86b1/diff:/var/lib/docker/overlay2/43ab92b3eac6509bfdcfd06bf19f02eff5bc53dc7ed708b0ae451411e324421c/diff:/var/lib/docker/overlay2/1b635920acef6f36080fa40f165a1eac431294471c8137e72ea3d380be860a43/diff:/var/lib/docker/overlay2/eac33db807db08a507c6ca13a975eaa50ef01e8175463b45f015185c1d82bc34/diff",
-                "MergedDir": "/var/lib/docker/overlay2/74c24303379de9156251338b098f919dc643b3e393b7d5be9c7bc275a0f75105/merged",
-                "UpperDir": "/var/lib/docker/overlay2/74c24303379de9156251338b098f919dc643b3e393b7d5be9c7bc275a0f75105/diff",
-                "WorkDir": "/var/lib/docker/overlay2/74c24303379de9156251338b098f919dc643b3e393b7d5be9c7bc275a0f75105/work"
+                "LowerDir": "/var/lib/docker/overlay2/aa9efa7d7ccc24a3ab3bdcc5f2f8f47cf116fb21f3be0f5d8439f1851c0ca165-init/diff:/var/lib/docker/overlay2/b22eaf623c0c82f581739cfd74be3007ef390add5dc2429f71b685d987fbebd6/diff:/var/lib/docker/overlay2/e0d441ea438c35fe2024b677d6f4dccd72614a1094fcb187d7ad99a9136cd9ab/diff:/var/lib/docker/overlay2/ea207ec8feb4e60dedd14a88fc197c4f6547830ae7cec2258093e664862e01fc/diff:/var/lib/docker/overlay2/8e2fb2a5ec3895d73a31127b5dcc33f0b2be539d0b8608bcf67b03443513f20e/diff:/var/lib/docker/overlay2/9de1a6c1f4e48368829f7a2fe2537b44642ca48bc569f80575368193435e15a9/diff:/var/lib/docker/overlay2/4dc37a17dc495f3812eeff62410a3cdc45e4f5902cd3662d4d49a8b398ef53f2/diff:/var/lib/docker/overlay2/067e16071d6519575b6e578ded0f1fc3f35ea2c50e6c688b7fca18497e8b86b1/diff:/var/lib/docker/overlay2/43ab92b3eac6509bfdcfd06bf19f02eff5bc53dc7ed708b0ae451411e324421c/diff:/var/lib/docker/overlay2/1b635920acef6f36080fa40f165a1eac431294471c8137e72ea3d380be860a43/diff:/var/lib/docker/overlay2/eac33db807db08a507c6ca13a975eaa50ef01e8175463b45f015185c1d82bc34/diff",
+                "MergedDir": "/var/lib/docker/overlay2/aa9efa7d7ccc24a3ab3bdcc5f2f8f47cf116fb21f3be0f5d8439f1851c0ca165/merged",
+                "UpperDir": "/var/lib/docker/overlay2/aa9efa7d7ccc24a3ab3bdcc5f2f8f47cf116fb21f3be0f5d8439f1851c0ca165/diff",
+                "WorkDir": "/var/lib/docker/overlay2/aa9efa7d7ccc24a3ab3bdcc5f2f8f47cf116fb21f3be0f5d8439f1851c0ca165/work"
             },
             "Name": "overlay2"
         },
         "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache",
+                "Destination": "/apk_cache",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
             {
                 "Type": "bind",
                 "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/reports",
@@ -149,7 +158,7 @@
             }
         ],
         "Config": {
-            "Hostname": "f0bc67053964",
+            "Hostname": "ecc5bb5aeefc",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
@@ -160,7 +169,6 @@
             "StdinOnce": false,
             "Env": [
                 "ITERATIONS=1000",
-                "TIMING=time",
                 "HTTP_SERVER=code-battle-http-server",
                 "HTTP_REQUEST=http://code-battle-http-server:8090/hello",
                 "NAME=python",
@@ -175,6 +183,7 @@
             "Cmd": null,
             "Image": "code-battle_python",
             "Volumes": {
+                "/apk_cache": {},
                 "/reports": {}
             },
             "WorkingDir": "/app",
@@ -186,7 +195,7 @@
             ],
             "OnBuild": null,
             "Labels": {
-                "com.docker.compose.config-hash": "32f6699d96cb243cf66a6d4b3e006d062e20be23e8cdb8ef65c7a185ed159dfe",
+                "com.docker.compose.config-hash": "71775cbe437941ab3fe7ee46dc3fb086d0e7107b63b360fe6a1a72e6de28c545",
                 "com.docker.compose.container-number": "1",
                 "com.docker.compose.oneoff": "False",
                 "com.docker.compose.project": "code-battle",
@@ -198,12 +207,12 @@
         },
         "NetworkSettings": {
             "Bridge": "",
-            "SandboxID": "9d7be770dd2ea54cb54a97715f465619c344bb2031d5246c3ea3549178ab0c61",
+            "SandboxID": "c4dc26d4e1a2212a55b67726bab4b598c8870038c5b9c0d502bb8dd29662a82d",
             "HairpinMode": false,
             "LinkLocalIPv6Address": "",
             "LinkLocalIPv6PrefixLen": 0,
             "Ports": {},
-            "SandboxKey": "/var/run/docker/netns/9d7be770dd2e",
+            "SandboxKey": "/var/run/docker/netns/c4dc26d4e1a2",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null,
             "EndpointID": "",
@@ -219,8 +228,8 @@
                     "IPAMConfig": null,
                     "Links": null,
                     "Aliases": [
-                        "f0bc67053964",
-                        "python"
+                        "python",
+                        "ecc5bb5aeefc"
                     ],
                     "NetworkID": "e4b742d7c308d9820a5e59cba7a888946c55354d18aa619aaa43214084661ea0",
                     "EndpointID": "",

@@ -1,0 +1,366 @@
+desc: --pages-as-heap=yes --massif-out-file=/reports/valgrind.golang
+cmd: /app/main
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=626688
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=0
+mem_heap_B=1269760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=0
+mem_heap_B=1359872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=0
+mem_heap_B=1568768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=0
+mem_heap_B=1572864
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=0
+mem_heap_B=1576960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=0
+mem_heap_B=1585152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=0
+mem_heap_B=1589248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=0
+mem_heap_B=1593344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=0
+mem_heap_B=1593344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n2: 1593344 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 1589248 0x0: ???
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=0
+mem_heap_B=1589248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=0
+mem_heap_B=1589248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=28118
+mem_heap_B=1851392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=28386
+mem_heap_B=1982464
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=28475
+mem_heap_B=3031040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=28564
+mem_heap_B=11419648
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=28653
+mem_heap_B=78528512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=28742
+mem_heap_B=615399424
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=37560
+mem_heap_B=682508288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=37697
+mem_heap_B=749617152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 749617152 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 748027904 0x465DC4: runtime.sysMmap (sys_linux_amd64.s:507)
+  n4: 748027904 0x403A6D: runtime.mmap (cgo_mmap.go:44)
+   n1: 613548032 0x429531: runtime.(*pageAlloc).sysInit (mem_linux.go:157)
+    n1: 613548032 0x427054: runtime.(*pageAlloc).init (mpagealloc.go:317)
+     n1: 613548032 0x4241AA: runtime.(*mheap).init (mheap.go:726)
+      n1: 613548032 0x40B4A8: runtime.mallocinit (malloc.go:480)
+       n1: 613548032 0x436130: runtime.schedinit (proc.go:635)
+        n0: 613548032 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+   n1: 67108864 0x40BDDA: runtime.sysReserve (mem_linux.go:157)
+    n1: 67108864 0x40BDDA: runtime.(*mheap).sysAlloc (malloc.go:655)
+     n1: 67108864 0x425644: runtime.(*mheap).grow (mheap.go:1346)
+      n1: 67108864 0x425448: runtime.(*mheap).allocSpan (mheap.go:1173)
+       n1: 67108864 0x45D0F8: runtime.(*mheap).alloc.func1 (mheap.go:910)
+        n1: 67108864 0x4249E4: runtime.(*mheap).alloc (mheap.go:904)
+         n1: 67108864 0x415C38: runtime.(*mcentral).grow (mcentral.go:232)
+          n1: 67108864 0x415A1E: runtime.(*mcentral).cacheSpan (mcentral.go:158)
+           n1: 67108864 0x414F29: runtime.(*mcache).refill (mcache.go:162)
+            n1: 67108864 0x40C1AC: runtime.(*mcache).nextFree (malloc.go:882)
+             n1: 67108864 0x40CBAF: runtime.mallocgc (malloc.go:1069)
+              n1: 67108864 0x40CE17: runtime.newobject (malloc.go:1177)
+               n1: 67108864 0x43D6D0: runtime.malg (proc.go:3944)
+                n1: 67108864 0x42F568: runtime.mpreinit (os_linux.go:355)
+                 n1: 67108864 0x4365F6: runtime.mcommoninit (proc.go:744)
+                  n1: 67108864 0x43616E: runtime.schedinit (proc.go:637)
+                   n0: 67108864 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+   n1: 67108864 0x4165E9: runtime.sysMap (mem_linux.go:167)
+    n1: 67108864 0x40B944: runtime.(*mheap).sysAlloc (malloc.go:729)
+     n1: 67108864 0x425644: runtime.(*mheap).grow (mheap.go:1346)
+      n1: 67108864 0x425448: runtime.(*mheap).allocSpan (mheap.go:1173)
+       n1: 67108864 0x45D0F8: runtime.(*mheap).alloc.func1 (mheap.go:910)
+        n1: 67108864 0x4249E4: runtime.(*mheap).alloc (mheap.go:904)
+         n1: 67108864 0x415C38: runtime.(*mcentral).grow (mcentral.go:232)
+          n1: 67108864 0x415A1E: runtime.(*mcentral).cacheSpan (mcentral.go:158)
+           n1: 67108864 0x414F29: runtime.(*mcache).refill (mcache.go:162)
+            n1: 67108864 0x40C1AC: runtime.(*mcache).nextFree (malloc.go:882)
+             n1: 67108864 0x40CBAF: runtime.mallocgc (malloc.go:1069)
+              n1: 67108864 0x40CE17: runtime.newobject (malloc.go:1177)
+               n1: 67108864 0x43D6D0: runtime.malg (proc.go:3944)
+                n1: 67108864 0x42F568: runtime.mpreinit (os_linux.go:355)
+                 n1: 67108864 0x4365F6: runtime.mcommoninit (proc.go:744)
+                  n1: 67108864 0x43616E: runtime.schedinit (proc.go:637)
+                   n0: 67108864 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+   n0: 262144 in 1 place, below massif's threshold (1.00%)
+ n0: 1589248 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=37860
+mem_heap_B=783171584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=38083
+mem_heap_B=785338368
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=38927
+mem_heap_B=785469440
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=39204
+mem_heap_B=785473536
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=39481
+mem_heap_B=785477632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=39758
+mem_heap_B=785481728
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=40035
+mem_heap_B=785485824
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=40369
+mem_heap_B=786534400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=44867
+mem_heap_B=786599936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=45283
+mem_heap_B=786665472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 786665472 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 785076224 0x465DC4: runtime.sysMmap (sys_linux_amd64.s:507)
+  n4: 785076224 0x403A6D: runtime.mmap (cgo_mmap.go:44)
+   n1: 613548032 0x429531: runtime.(*pageAlloc).sysInit (mem_linux.go:157)
+    n1: 613548032 0x427054: runtime.(*pageAlloc).init (mpagealloc.go:317)
+     n1: 613548032 0x4241AA: runtime.(*mheap).init (mheap.go:726)
+      n1: 613548032 0x40B4A8: runtime.mallocinit (malloc.go:480)
+       n1: 613548032 0x436130: runtime.schedinit (proc.go:635)
+        n0: 613548032 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+   n2: 67256320 0x4165E9: runtime.sysMap (mem_linux.go:167)
+    n1: 67108864 0x40B944: runtime.(*mheap).sysAlloc (malloc.go:729)
+     n1: 67108864 0x425644: runtime.(*mheap).grow (mheap.go:1346)
+      n1: 67108864 0x425448: runtime.(*mheap).allocSpan (mheap.go:1173)
+       n1: 67108864 0x45D0F8: runtime.(*mheap).alloc.func1 (mheap.go:910)
+        n1: 67108864 0x4249E4: runtime.(*mheap).alloc (mheap.go:904)
+         n1: 67108864 0x415C38: runtime.(*mcentral).grow (mcentral.go:232)
+          n1: 67108864 0x415A1E: runtime.(*mcentral).cacheSpan (mcentral.go:158)
+           n1: 67108864 0x414F29: runtime.(*mcache).refill (mcache.go:162)
+            n1: 67108864 0x40C1AC: runtime.(*mcache).nextFree (malloc.go:882)
+             n1: 67108864 0x40CBAF: runtime.mallocgc (malloc.go:1069)
+              n1: 67108864 0x40CE17: runtime.newobject (malloc.go:1177)
+               n1: 67108864 0x43D6D0: runtime.malg (proc.go:3944)
+                n1: 67108864 0x42F568: runtime.mpreinit (os_linux.go:355)
+                 n1: 67108864 0x4365F6: runtime.mcommoninit (proc.go:744)
+                  n1: 67108864 0x43616E: runtime.schedinit (proc.go:637)
+                   n0: 67108864 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+    n0: 147456 in 1 place, below massif's threshold (1.00%)
+   n1: 67108864 0x40BDDA: runtime.sysReserve (mem_linux.go:157)
+    n1: 67108864 0x40BDDA: runtime.(*mheap).sysAlloc (malloc.go:655)
+     n1: 67108864 0x425644: runtime.(*mheap).grow (mheap.go:1346)
+      n1: 67108864 0x425448: runtime.(*mheap).allocSpan (mheap.go:1173)
+       n1: 67108864 0x45D0F8: runtime.(*mheap).alloc.func1 (mheap.go:910)
+        n1: 67108864 0x4249E4: runtime.(*mheap).alloc (mheap.go:904)
+         n1: 67108864 0x415C38: runtime.(*mcentral).grow (mcentral.go:232)
+          n1: 67108864 0x415A1E: runtime.(*mcentral).cacheSpan (mcentral.go:158)
+           n1: 67108864 0x414F29: runtime.(*mcache).refill (mcache.go:162)
+            n1: 67108864 0x40C1AC: runtime.(*mcache).nextFree (malloc.go:882)
+             n1: 67108864 0x40CBAF: runtime.mallocgc (malloc.go:1069)
+              n1: 67108864 0x40CE17: runtime.newobject (malloc.go:1177)
+               n1: 67108864 0x43D6D0: runtime.malg (proc.go:3944)
+                n1: 67108864 0x42F568: runtime.mpreinit (os_linux.go:355)
+                 n1: 67108864 0x4365F6: runtime.mcommoninit (proc.go:744)
+                  n1: 67108864 0x43616E: runtime.schedinit (proc.go:637)
+                   n0: 67108864 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+   n2: 37163008 0x41619D: runtime.sysAlloc (mem_linux.go:21)
+    n1: 35721216 0x40D4BB: runtime.persistentalloc1 (malloc.go:1342)
+     n1: 35721216 0x45BCC4: runtime.persistentalloc.func1 (malloc.go:1314)
+      n2: 35721216 0x40D204: runtime.persistentalloc (malloc.go:1313)
+       n1: 33554432 0x40BBB9: runtime.(*mheap).sysAlloc (malloc.go:737)
+        n1: 33554432 0x425644: runtime.(*mheap).grow (mheap.go:1346)
+         n1: 33554432 0x425448: runtime.(*mheap).allocSpan (mheap.go:1173)
+          n1: 33554432 0x45D0F8: runtime.(*mheap).alloc.func1 (mheap.go:910)
+           n1: 33554432 0x4249E4: runtime.(*mheap).alloc (mheap.go:904)
+            n1: 33554432 0x415C38: runtime.(*mcentral).grow (mcentral.go:232)
+             n1: 33554432 0x415A1E: runtime.(*mcentral).cacheSpan (mcentral.go:158)
+              n1: 33554432 0x414F29: runtime.(*mcache).refill (mcache.go:162)
+               n1: 33554432 0x40C1AC: runtime.(*mcache).nextFree (malloc.go:882)
+                n1: 33554432 0x40CBAF: runtime.mallocgc (malloc.go:1069)
+                 n1: 33554432 0x40CE17: runtime.newobject (malloc.go:1177)
+                  n1: 33554432 0x43D6D0: runtime.malg (proc.go:3944)
+                   n1: 33554432 0x42F568: runtime.mpreinit (os_linux.go:355)
+                    n1: 33554432 0x4365F6: runtime.mcommoninit (proc.go:744)
+                     n1: 33554432 0x43616E: runtime.schedinit (proc.go:637)
+                      n0: 33554432 0x4622E4: runtime.rt0_go (asm_amd64.s:220)
+       n0: 2166784 in 1 place, below massif's threshold (1.00%)
+    n0: 1441792 in 4 places, all below massif's threshold (1.00%)
+ n0: 1589248 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=248219
+mem_heap_B=786927616
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

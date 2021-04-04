@@ -1,12 +1,12 @@
 [
     {
-        "Id": "e727ca0e9a015875ca6bcacf310d3f131284f5d4b1a281f24fd180f4f0adf896",
-        "Created": "2021-04-04T01:02:09.558414452Z",
+        "Id": "c83d209c317e60df40301db4cddee580336cf367e030a7c42a7c4518e607843c",
+        "Created": "2021-04-04T01:01:34.913788422Z",
         "Path": "sh",
         "Args": [
             "timing.sh",
-            "php",
-            "main.php"
+            "pypy3",
+            "main.py"
         ],
         "State": {
             "Status": "exited",
@@ -18,15 +18,15 @@
             "Pid": 0,
             "ExitCode": 0,
             "Error": "",
-            "StartedAt": "2021-04-04T01:04:20.272739907Z",
-            "FinishedAt": "2021-04-04T01:04:22.637477996Z"
+            "StartedAt": "2021-04-04T01:03:45.296850506Z",
+            "FinishedAt": "2021-04-04T01:04:16.560930175Z"
         },
-        "Image": "sha256:171de1edf46d56635f3346b1094634f6c3f26f0eb0a9217a18a33fbd88cb40d0",
-        "ResolvConfPath": "/var/lib/docker/containers/e727ca0e9a015875ca6bcacf310d3f131284f5d4b1a281f24fd180f4f0adf896/resolv.conf",
-        "HostnamePath": "/var/lib/docker/containers/e727ca0e9a015875ca6bcacf310d3f131284f5d4b1a281f24fd180f4f0adf896/hostname",
-        "HostsPath": "/var/lib/docker/containers/e727ca0e9a015875ca6bcacf310d3f131284f5d4b1a281f24fd180f4f0adf896/hosts",
-        "LogPath": "/var/lib/docker/containers/e727ca0e9a015875ca6bcacf310d3f131284f5d4b1a281f24fd180f4f0adf896/e727ca0e9a015875ca6bcacf310d3f131284f5d4b1a281f24fd180f4f0adf896-json.log",
-        "Name": "/code-battle-php",
+        "Image": "sha256:a71a5596a4d1b2912874f8bdaf6e867c03fe53d64c3aaccb15d551c2825dc2dd",
+        "ResolvConfPath": "/var/lib/docker/containers/c83d209c317e60df40301db4cddee580336cf367e030a7c42a7c4518e607843c/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c83d209c317e60df40301db4cddee580336cf367e030a7c42a7c4518e607843c/hostname",
+        "HostsPath": "/var/lib/docker/containers/c83d209c317e60df40301db4cddee580336cf367e030a7c42a7c4518e607843c/hosts",
+        "LogPath": "/var/lib/docker/containers/c83d209c317e60df40301db4cddee580336cf367e030a7c42a7c4518e607843c/c83d209c317e60df40301db4cddee580336cf367e030a7c42a7c4518e607843c-json.log",
+        "Name": "/code-battle-pypy",
         "RestartCount": 0,
         "Driver": "overlay2",
         "Platform": "linux",
@@ -36,8 +36,8 @@
         "ExecIDs": null,
         "HostConfig": {
             "Binds": [
-                "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache:/apk_cache:rw",
-                "/home/guionardo/dev/github.com/guionardo/code-battle/reports:/reports:rw"
+                "/home/guionardo/dev/github.com/guionardo/code-battle/reports:/reports:rw",
+                "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache:/apk_cache:rw"
             ],
             "ContainerIDFile": "",
             "LogConfig": {
@@ -132,22 +132,14 @@
         },
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/8484e3145a2b60ec613501ef237072ddc1bffe3f05624d4f9268983f578ce17c-init/diff:/var/lib/docker/overlay2/78d6d73126c3ed3aba0717274071de39297f7bb58fccf6b03b750388feac9030/diff:/var/lib/docker/overlay2/20a22572b30bd5bcf1f5e554a08e4cafdabd0b94a9cf7ccf6cf9a652e5d880ae/diff:/var/lib/docker/overlay2/f0e48044f7b6acea01ed7bba0d5bc14f27d68b58fe058ae0200d33f4ef7346f1/diff:/var/lib/docker/overlay2/f1c46a4678f3d0e65ce2bb5d57ac1e83c8b806f4eff2130f45d1b13b449ebab8/diff:/var/lib/docker/overlay2/c367f2ab6c6d3deddd968ea0c4fe5cd5f21c52f543b9c61ad0dce14af9fd66a2/diff:/var/lib/docker/overlay2/f86270e2d766c225db9c97305189608cecb03ce368b33c31049d6bba9e92995e/diff:/var/lib/docker/overlay2/d20abf18e98c2d8f3f1472f946da6ea671e1fb790807bd057e3106b6f3d7d95f/diff:/var/lib/docker/overlay2/ce362fd9dd8454a6438b49ad55b9094ef56dcfe0217c4a8b7c870650e85785d0/diff:/var/lib/docker/overlay2/3832cf890f5c341ed5a6ebff2a1a691cd9d9b15b4362cf72f1cf56d3e8a386fc/diff:/var/lib/docker/overlay2/6c20bfefe3860fc3fac905d7fd72a68ff275b1998877dfaa5faf7b2e02451ffd/diff:/var/lib/docker/overlay2/aee14d7576e043aec430e297f0c99d65e8fb038f27d316f4c4f77de51389e0e5/diff:/var/lib/docker/overlay2/d196aa85b2620f542f2e851bfe2892ae8bf769c4b5f67df78aec8d2b28f88a9e/diff",
-                "MergedDir": "/var/lib/docker/overlay2/8484e3145a2b60ec613501ef237072ddc1bffe3f05624d4f9268983f578ce17c/merged",
-                "UpperDir": "/var/lib/docker/overlay2/8484e3145a2b60ec613501ef237072ddc1bffe3f05624d4f9268983f578ce17c/diff",
-                "WorkDir": "/var/lib/docker/overlay2/8484e3145a2b60ec613501ef237072ddc1bffe3f05624d4f9268983f578ce17c/work"
+                "LowerDir": "/var/lib/docker/overlay2/543059a38d003d222b565fef6a02c5f7e9ecab9d42f47e4b621e317e12c2d277-init/diff:/var/lib/docker/overlay2/0e5ddf8b41109fd768daf2a7ac889e40a1bc0a423b5ae99f68672faa6639c1e0/diff:/var/lib/docker/overlay2/48f74be9e1219a23eb7803eda8b70589bc2c27c139b50d3b2e78216f76257b20/diff:/var/lib/docker/overlay2/2046b96f1c623d53fd136a8c27890e3555788932f3d9f6c3ea57bb739e4e5631/diff:/var/lib/docker/overlay2/856972fdae44e4ecdf1001f06aab38319492c6917c6f15c629949ff27d1ae98f/diff:/var/lib/docker/overlay2/a45dba331bcc842db3a37acd5dadf13d99c844cbeedc45505a1ec58e6bf927ad/diff:/var/lib/docker/overlay2/e94eb063ce1a9f3bdf5f1484f23a818e0bd43ec094b7080b54a6809797059803/diff:/var/lib/docker/overlay2/c4cacf78a5cdf22925246ffda054530c59b7160b92463bd9f40816082fb91765/diff:/var/lib/docker/overlay2/b5dc43f028ec6c3db3b2bb5081c58914ed391dcdc8022a2dd346134ddc0cdcb9/diff:/var/lib/docker/overlay2/72cf4c0d29387ab3c0bb7c11209ad3f8e0ce910af292565827996b7ca965e9b9/diff",
+                "MergedDir": "/var/lib/docker/overlay2/543059a38d003d222b565fef6a02c5f7e9ecab9d42f47e4b621e317e12c2d277/merged",
+                "UpperDir": "/var/lib/docker/overlay2/543059a38d003d222b565fef6a02c5f7e9ecab9d42f47e4b621e317e12c2d277/diff",
+                "WorkDir": "/var/lib/docker/overlay2/543059a38d003d222b565fef6a02c5f7e9ecab9d42f47e4b621e317e12c2d277/work"
             },
             "Name": "overlay2"
         },
         "Mounts": [
-            {
-                "Type": "bind",
-                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache",
-                "Destination": "/apk_cache",
-                "Mode": "rw",
-                "RW": true,
-                "Propagation": "rprivate"
-            },
             {
                 "Type": "bind",
                 "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/reports",
@@ -155,10 +147,18 @@
                 "Mode": "rw",
                 "RW": true,
                 "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache",
+                "Destination": "/apk_cache",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
             }
         ],
         "Config": {
-            "Hostname": "e727ca0e9a01",
+            "Hostname": "c83d209c317e",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
@@ -171,21 +171,15 @@
                 "ITERATIONS=1000",
                 "HTTP_SERVER=code-battle-http-server",
                 "HTTP_REQUEST=http://code-battle-http-server:8090/hello",
-                "NAME=php",
-                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                "PHPIZE_DEPS=autoconf \t\tdpkg-dev dpkg \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkgconf \t\tre2c",
-                "PHP_INI_DIR=/usr/local/etc/php",
-                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
-                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
-                "PHP_LDFLAGS=-Wl,-O1 -pie",
-                "GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F",
-                "PHP_VERSION=8.0.3",
-                "PHP_URL=https://www.php.net/distributions/php-8.0.3.tar.xz",
-                "PHP_ASC_URL=https://www.php.net/distributions/php-8.0.3.tar.xz.asc",
-                "PHP_SHA256=c9816aa9745a9695672951eaff3a35ca5eddcb9cacf87a4f04b9fb1169010251"
+                "NAME=pypy",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "PYPY_VERSION=7.3.0",
+                "PYPY_SHA256SUM=c1074569de1fcf89488689cecc5953cac7e00e5e6f3d96940dd3bae15827dcd9",
+                "PYTHON_PIP_VERSION=19.3.1"
             ],
             "Cmd": null,
-            "Image": "code-battle_php",
+            "Image": "code-battle_pypy",
             "Volumes": {
                 "/apk_cache": {},
                 "/reports": {}
@@ -194,29 +188,30 @@
             "Entrypoint": [
                 "sh",
                 "timing.sh",
-                "php",
-                "main.php"
+                "pypy3",
+                "main.py"
             ],
             "OnBuild": null,
             "Labels": {
-                "com.docker.compose.config-hash": "c362a701a557053da7c4fe02e8b722b1b384d5f076ba8354b1ff33300ccf53b9",
+                "com.docker.compose.config-hash": "ba5877b37501a54e3860d0e97fca854b46e53d7ec8f73dc52bb4f1a31aed157e",
                 "com.docker.compose.container-number": "1",
                 "com.docker.compose.oneoff": "False",
                 "com.docker.compose.project": "code-battle",
                 "com.docker.compose.project.config_files": "docker-compose.yml",
                 "com.docker.compose.project.working_dir": "/home/guionardo/dev/github.com/guionardo/code-battle",
-                "com.docker.compose.service": "php",
-                "com.docker.compose.version": "1.25.0"
+                "com.docker.compose.service": "pypy",
+                "com.docker.compose.version": "1.25.0",
+                "maintainer": "Jamie Hewland <jhewland@gmail.com>"
             }
         },
         "NetworkSettings": {
             "Bridge": "",
-            "SandboxID": "57ac8250d3594065177600af82460fbda7421df7d7df136ae8f5fb8f9caeb1d2",
+            "SandboxID": "fd8b042ee103df370a31746ece37cf36cb9df998270d87f54843ee1b1903b7b2",
             "HairpinMode": false,
             "LinkLocalIPv6Address": "",
             "LinkLocalIPv6PrefixLen": 0,
             "Ports": {},
-            "SandboxKey": "/var/run/docker/netns/57ac8250d359",
+            "SandboxKey": "/var/run/docker/netns/fd8b042ee103",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null,
             "EndpointID": "",
@@ -232,8 +227,8 @@
                     "IPAMConfig": null,
                     "Links": null,
                     "Aliases": [
-                        "e727ca0e9a01",
-                        "php"
+                        "c83d209c317e",
+                        "pypy"
                     ],
                     "NetworkID": "e4b742d7c308d9820a5e59cba7a888946c55354d18aa619aaa43214084661ea0",
                     "EndpointID": "",

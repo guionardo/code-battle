@@ -1,5 +1,6 @@
 language,command,user_time,system_time,percent_cpu,elapsed_time,avg_shared_text_size,avg_unshared_data_size,avg_stack_size,avg_total_size,max_resident_set_size,avg_resident_set_size,major_page_faults,minor_page_faults,voluntary_context_switches,involuntary_context_switches,swaps,file_system_inputs,file_system_outputs,socket_messages_sent,socket_messages_received,signals_delivered,page_size,exit_status
-php,php main.php,0.06,0.18,37.0,0:00:00,0,0,0,0,54512,0,,,3012,1814,0,0,0,0,0,0,4096,0
-python,python main.py,2.06,0.33,91.0,0:00:00,0,0,0,0,74880,0,,,1986,570,0,0,0,0,0,0,4096,0
-golang,/app/main,0.0,0.0,100.0,0:00:00,0,0,0,0,7152,0,,,10,0,0,0,0,0,0,0,4096,0
-node,node main.js,0.03,0.0,88.0,0:00:00,0,0,0,0,116928,0,,,15,11,0,0,0,0,0,0,4096,0
+php,php main.php,0.04,0.22,51.0,0:00:00,0,0,0,0,55536,0,,,3495,521,0,0,0,0,0,0,4096,0
+python,python main.py,2.11,0.23,91.0,0:00:00,0,0,0,0,74144,0,,,1990,532,0,0,0,0,0,0,4096,0
+golang,/app/main,0.0,0.0,100.0,0:00:00,0,0,0,0,7280,0,,,13,6,0,0,0,0,0,0,4096,0
+pypy,pypy3 main.py,5.2,0.28,95.0,0:00:00,0,0,0,0,392688,0,,,1899,957,0,0,0,0,0,0,4096,0
+node,node main.js,0.03,0.0,100.0,0:00:00,0,0,0,0,118800,0,,,18,8,0,0,0,0,0,0,4096,0
