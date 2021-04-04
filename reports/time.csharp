@@ -1,18 +1,18 @@
-	Command being timed: "pypy3 main.py"
-	User time (seconds): 5.29
-	System time (seconds): 0.30
-	Percent of CPU this job got: 96%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 5.82s
+	Command being timed: "dotnet csharp.dll"
+	User time (seconds): 0.03
+	System time (seconds): 0.01
+	Percent of CPU this job got: 120%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 0.04s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 395568
+	Maximum resident set size (kbytes): 75776
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 15615
-	Voluntary context switches: 1901
-	Involuntary context switches: 932
+	Minor (reclaiming a frame) page faults: 2277
+	Voluntary context switches: 23
+	Involuntary context switches: 17
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

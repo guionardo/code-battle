@@ -3,4 +3,5 @@ python,python main.py,29818880,0,0,29818880
 pypy,pypy3 main.py,115101696,0,0,115101696
 node,node main.js,253648896,0,0,253648896
 golang,/app/main,1593344,0,0,1593344
+csharp,dotnet csharp.dll,21528576,0,0,21528576
 php,php main.php,35454976,0,0,35454976

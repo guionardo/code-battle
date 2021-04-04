@@ -1,18 +1,18 @@
 	Command being timed: "php main.php"
-	User time (seconds): 0.04
-	System time (seconds): 0.22
-	Percent of CPU this job got: 51%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 0.52s
+	User time (seconds): 0.06
+	System time (seconds): 0.24
+	Percent of CPU this job got: 55%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 0.54s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 55536
+	Maximum resident set size (kbytes): 55008
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 1512
-	Voluntary context switches: 3495
-	Involuntary context switches: 521
+	Minor (reclaiming a frame) page faults: 1511
+	Voluntary context switches: 3669
+	Involuntary context switches: 276
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

@@ -70,6 +70,17 @@ services:
         volumes:
             - ./reports:/reports
             - ./apk_cache:/apk_cache
+
+    csharp:
+        build:
+            context: ./src/csharp
+            dockerfile: Dockerfile
+        container_name: code-battle-csharp
+        env_file: .env
+        environment:
+            - NAME=csharp
+        volumes:
+            - ./reports:/reports            
         
 
     parser:

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 . .env
-LANGS=("python" "pypy" "golang" "php" "node")
+LANGS=("python" "pypy" "golang" "php" "node" "csharp")
 
 for LANG in "${LANGS[@]}"
 do

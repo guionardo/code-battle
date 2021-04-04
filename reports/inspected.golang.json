@@ -1,7 +1,7 @@
 [
     {
-        "Id": "4b23a97682f4749379cc75fa90b3df034148a99f7da68ad2c961d2d3e6438d76",
-        "Created": "2021-04-04T01:02:07.458854599Z",
+        "Id": "1815faab2463a0cd2187be98a5590d618befb41556d88931f1c4a21c963774d4",
+        "Created": "2021-04-04T01:31:19.577211151Z",
         "Path": "sh",
         "Args": [
             "timing.sh",
@@ -17,14 +17,14 @@
             "Pid": 0,
             "ExitCode": 0,
             "Error": "",
-            "StartedAt": "2021-04-04T01:04:18.211209126Z",
-            "FinishedAt": "2021-04-04T01:04:18.642948431Z"
+            "StartedAt": "2021-04-04T01:37:12.958983527Z",
+            "FinishedAt": "2021-04-04T01:37:13.390812853Z"
         },
-        "Image": "sha256:c77da1d316f41b49b89ccea7a188bf15cc59cdbc0f011282320542ee7f31ef6a",
-        "ResolvConfPath": "/var/lib/docker/containers/4b23a97682f4749379cc75fa90b3df034148a99f7da68ad2c961d2d3e6438d76/resolv.conf",
-        "HostnamePath": "/var/lib/docker/containers/4b23a97682f4749379cc75fa90b3df034148a99f7da68ad2c961d2d3e6438d76/hostname",
-        "HostsPath": "/var/lib/docker/containers/4b23a97682f4749379cc75fa90b3df034148a99f7da68ad2c961d2d3e6438d76/hosts",
-        "LogPath": "/var/lib/docker/containers/4b23a97682f4749379cc75fa90b3df034148a99f7da68ad2c961d2d3e6438d76/4b23a97682f4749379cc75fa90b3df034148a99f7da68ad2c961d2d3e6438d76-json.log",
+        "Image": "sha256:b4f6cb5341410a56ac6919ac2943c5345938facfd53afb40458881d649d4c195",
+        "ResolvConfPath": "/var/lib/docker/containers/1815faab2463a0cd2187be98a5590d618befb41556d88931f1c4a21c963774d4/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/1815faab2463a0cd2187be98a5590d618befb41556d88931f1c4a21c963774d4/hostname",
+        "HostsPath": "/var/lib/docker/containers/1815faab2463a0cd2187be98a5590d618befb41556d88931f1c4a21c963774d4/hosts",
+        "LogPath": "/var/lib/docker/containers/1815faab2463a0cd2187be98a5590d618befb41556d88931f1c4a21c963774d4/1815faab2463a0cd2187be98a5590d618befb41556d88931f1c4a21c963774d4-json.log",
         "Name": "/code-battle-golang",
         "RestartCount": 0,
         "Driver": "overlay2",
@@ -131,22 +131,14 @@
         },
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/4f8d3ff95ebd81373d2ee3524be6bc9bc49c7099578f5c25694c05e00e435fb4-init/diff:/var/lib/docker/overlay2/2677c742462409d45edfb1302b8cc31e497767a65700bec4a361c5a8fe9d72c0/diff:/var/lib/docker/overlay2/a2f8f6158c27b1b64f5a0c543435fd9910e1009a403a62c80251122a3cbfa855/diff:/var/lib/docker/overlay2/aa4806dedb804233ad97d73bd8241cec225fae8103d99810deb7972e33e1b0cf/diff:/var/lib/docker/overlay2/90891be3248f85a280db9c829be70905e1f7e581c3ba776afc54a9c94a228fdf/diff:/var/lib/docker/overlay2/70caafdabd66c51ab3275bf5e17402d5c70b9018ef3dd72f402959ac4e9b0e85/diff:/var/lib/docker/overlay2/c7c7686e3376fa7429a1dadf78e3cc544798c04cb521a8e5e45ea987cb02c104/diff:/var/lib/docker/overlay2/24a2b0be5fe465f5e4dc27cf28feeb3dd52c9f7b5c5d66bf60ca47db7db559ec/diff:/var/lib/docker/overlay2/02281f94c380d4cc5c8b893ac26c3e4fa9095ee04e9fed6cd21ca4ae9868a769/diff:/var/lib/docker/overlay2/d196aa85b2620f542f2e851bfe2892ae8bf769c4b5f67df78aec8d2b28f88a9e/diff",
-                "MergedDir": "/var/lib/docker/overlay2/4f8d3ff95ebd81373d2ee3524be6bc9bc49c7099578f5c25694c05e00e435fb4/merged",
-                "UpperDir": "/var/lib/docker/overlay2/4f8d3ff95ebd81373d2ee3524be6bc9bc49c7099578f5c25694c05e00e435fb4/diff",
-                "WorkDir": "/var/lib/docker/overlay2/4f8d3ff95ebd81373d2ee3524be6bc9bc49c7099578f5c25694c05e00e435fb4/work"
+                "LowerDir": "/var/lib/docker/overlay2/52c440ab0a20da2a5e06d80f7247ca54efbff4cfaaecc7fb59bc9c5a7bd487cd-init/diff:/var/lib/docker/overlay2/badd08ee89bfa5010805f3b3c1d2798bcd53a94b6421f3a05b889d0abcb3695a/diff:/var/lib/docker/overlay2/e70aebb145a311a79ed3fac0dada1520cdbae567dec0ce9918ff5bc9bc132bda/diff:/var/lib/docker/overlay2/8e8b99b0b918191d1e3830c517ac6f9a62f05a1d87bca996d38206e116f5d3fc/diff:/var/lib/docker/overlay2/90891be3248f85a280db9c829be70905e1f7e581c3ba776afc54a9c94a228fdf/diff:/var/lib/docker/overlay2/70caafdabd66c51ab3275bf5e17402d5c70b9018ef3dd72f402959ac4e9b0e85/diff:/var/lib/docker/overlay2/c7c7686e3376fa7429a1dadf78e3cc544798c04cb521a8e5e45ea987cb02c104/diff:/var/lib/docker/overlay2/24a2b0be5fe465f5e4dc27cf28feeb3dd52c9f7b5c5d66bf60ca47db7db559ec/diff:/var/lib/docker/overlay2/02281f94c380d4cc5c8b893ac26c3e4fa9095ee04e9fed6cd21ca4ae9868a769/diff:/var/lib/docker/overlay2/d196aa85b2620f542f2e851bfe2892ae8bf769c4b5f67df78aec8d2b28f88a9e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/52c440ab0a20da2a5e06d80f7247ca54efbff4cfaaecc7fb59bc9c5a7bd487cd/merged",
+                "UpperDir": "/var/lib/docker/overlay2/52c440ab0a20da2a5e06d80f7247ca54efbff4cfaaecc7fb59bc9c5a7bd487cd/diff",
+                "WorkDir": "/var/lib/docker/overlay2/52c440ab0a20da2a5e06d80f7247ca54efbff4cfaaecc7fb59bc9c5a7bd487cd/work"
             },
             "Name": "overlay2"
         },
         "Mounts": [
-            {
-                "Type": "bind",
-                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/reports",
-                "Destination": "/reports",
-                "Mode": "rw",
-                "RW": true,
-                "Propagation": "rprivate"
-            },
             {
                 "Type": "bind",
                 "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache",
@@ -154,10 +146,18 @@
                 "Mode": "rw",
                 "RW": true,
                 "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/reports",
+                "Destination": "/reports",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
             }
         ],
         "Config": {
-            "Hostname": "4b23a97682f4",
+            "Hostname": "1815faab2463",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
@@ -189,7 +189,7 @@
             ],
             "OnBuild": null,
             "Labels": {
-                "com.docker.compose.config-hash": "813a97447cf5dce2d4a9dfdaa38484d5414e31e070d77158fcae7202d94b1ce0",
+                "com.docker.compose.config-hash": "77cb8d50d67da69ec652f9919a97b1e315b9a7b1f0e83fcea69d361b8466a3a8",
                 "com.docker.compose.container-number": "1",
                 "com.docker.compose.oneoff": "False",
                 "com.docker.compose.project": "code-battle",
@@ -201,12 +201,12 @@
         },
         "NetworkSettings": {
             "Bridge": "",
-            "SandboxID": "7cae0f42ffd37c34729a7a826d538a440242d750b92d7d45731c1d5a9cf99a4f",
+            "SandboxID": "2e061bf2978b64af7c059d29f234d9f73ab7b9a059eaf12ae7c5b7f8e5fb6d1f",
             "HairpinMode": false,
             "LinkLocalIPv6Address": "",
             "LinkLocalIPv6PrefixLen": 0,
             "Ports": {},
-            "SandboxKey": "/var/run/docker/netns/7cae0f42ffd3",
+            "SandboxKey": "/var/run/docker/netns/2e061bf2978b",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null,
             "EndpointID": "",
@@ -222,8 +222,8 @@
                     "IPAMConfig": null,
                     "Links": null,
                     "Aliases": [
-                        "golang",
-                        "4b23a97682f4"
+                        "1815faab2463",
+                        "golang"
                     ],
                     "NetworkID": "e4b742d7c308d9820a5e59cba7a888946c55354d18aa619aaa43214084661ea0",
                     "EndpointID": "",

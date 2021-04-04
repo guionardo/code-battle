@@ -1,6 +1,7 @@
 language,command,user_time,system_time,percent_cpu,elapsed_time,avg_shared_text_size,avg_unshared_data_size,avg_stack_size,avg_total_size,max_resident_set_size,avg_resident_set_size,major_page_faults,minor_page_faults,voluntary_context_switches,involuntary_context_switches,swaps,file_system_inputs,file_system_outputs,socket_messages_sent,socket_messages_received,signals_delivered,page_size,exit_status
-php,php main.php,0.04,0.22,51.0,0:00:00,0,0,0,0,55536,0,,,3495,521,0,0,0,0,0,0,4096,0
-python,python main.py,2.11,0.23,91.0,0:00:00,0,0,0,0,74144,0,,,1990,532,0,0,0,0,0,0,4096,0
-golang,/app/main,0.0,0.0,100.0,0:00:00,0,0,0,0,7280,0,,,13,6,0,0,0,0,0,0,4096,0
-pypy,pypy3 main.py,5.2,0.28,95.0,0:00:00,0,0,0,0,392688,0,,,1899,957,0,0,0,0,0,0,4096,0
-node,node main.js,0.03,0.0,100.0,0:00:00,0,0,0,0,118800,0,,,18,8,0,0,0,0,0,0,4096,0
+csharp,dotnet csharp.dll,0.03,0.01,120.0,0:00:00,0,0,0,0,75776,0,,,23,17,0,0,0,0,0,0,4096,0
+php,php main.php,0.06,0.24,55.0,0:00:00,0,0,0,0,55008,0,,,3669,276,0,0,0,0,0,0,4096,0
+python,python main.py,2.19,0.22,91.0,0:00:00,0,0,0,0,74640,0,,,1992,542,0,0,0,0,0,0,4096,0
+golang,/app/main,0.0,0.0,50.0,0:00:00,0,0,0,0,7248,0,,,10,2,0,0,0,0,0,0,4096,0
+pypy,pypy3 main.py,5.29,0.3,96.0,0:00:00,0,0,0,0,395568,0,,,1901,932,0,0,0,0,0,0,4096,0
+node,node main.js,0.02,0.01,100.0,0:00:00,0,0,0,0,117504,0,,,19,5,0,0,0,0,0,0,4096,0

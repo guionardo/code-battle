@@ -38,3 +38,8 @@ Here we will execute some operations to check how much time we need to complete 
 * GoLang
 * Node
 * PHP
+
+## Links
+
+* [Valgrind](https://valgrind.org/docs/manual/ms-manual.html#ms-manual.running-ms_print)
+* [Time](https://linux.die.net/man/1/time)

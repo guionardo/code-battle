@@ -20,7 +20,7 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=88647980
+time=88631373
 mem_heap_B=115101696
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -79,7 +79,7 @@ n2: 115101696 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=3
 #-----------
-time=117165731
+time=117170458
 mem_heap_B=115949568
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -138,7 +138,7 @@ n2: 115949568 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=4
 #-----------
-time=151191077
+time=151058829
 mem_heap_B=117260288
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -146,7 +146,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=181288219
+time=181355173
 mem_heap_B=117264384
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -154,7 +154,7 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=217097597
+time=217181168
 mem_heap_B=125001728
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -162,7 +162,7 @@ heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=255281559
+time=255184346
 mem_heap_B=125009920
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -170,7 +170,7 @@ heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=286318356
+time=286293577
 mem_heap_B=125718528
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -178,15 +178,15 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=327674439
-mem_heap_B=126300160
+time=326878833
+mem_heap_B=126308352
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=351530194
+time=351439848
 mem_heap_B=127000576
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -194,7 +194,7 @@ heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=392073200
+time=391960811
 mem_heap_B=127631360
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -202,7 +202,7 @@ heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=425710589
+time=425586786
 mem_heap_B=128307200
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -210,7 +210,7 @@ heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=454542468
+time=454372455
 mem_heap_B=128835584
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -218,7 +218,7 @@ heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=488242990
+time=488314126
 mem_heap_B=128905216
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -226,53 +226,77 @@ heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=520407680
-mem_heap_B=129720320
+time=520441388
+mem_heap_B=129732608
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=557394193
-mem_heap_B=130285568
+time=557398136
+mem_heap_B=130297856
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=591394601
-mem_heap_B=130289664
+time=591687086
+mem_heap_B=130359296
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=617207588
-mem_heap_B=130572288
+time=651504193
+mem_heap_B=131821568
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=651039598
-mem_heap_B=131809280
+time=685680046
+mem_heap_B=132349952
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=684882485
-mem_heap_B=132337664
+time=721093369
+mem_heap_B=132706304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=780824544
+mem_heap_B=132919296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=812694191
+mem_heap_B=133718016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=845232713
+mem_heap_B=135098368
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=detailed
-n3: 132337664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
- n5: 127762432 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+n3: 135098368 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 129347584 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
   n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
    n1: 61444096 0x1FFF0006EF: ???
     n1: 61444096 0x1FFF0000FF: ???
@@ -290,11 +314,11 @@ n3: 132337664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
     n1: 3268608 0x1FFF00016F: ???
      n1: 3268608 0x1FFF00057F: ???
       n0: 3268608 0x3A98FFF: ???
-  n0: 8556544 in 23 places, all below massif's threshold (1.00%)
-  n1: 4755456 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
-   n1: 4755456 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
-    n1: 4755456 0x80FFF: ???
-     n0: 4755456 in 6 places, all below massif's threshold (1.00%)
+  n0: 9084928 in 24 places, all below massif's threshold (1.00%)
+  n1: 6340608 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 6340608 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n1: 6340608 0x80FFF: ???
+     n0: 6340608 in 8 places, all below massif's threshold (1.00%)
   n3: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
    n1: 2605056 0x1FFEFFBBCF: ???
     n1: 2605056 0x1FFEFFB5DF: ???
@@ -329,130 +353,98 @@ n3: 132337664 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
                        n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
                         n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
                          n0: 4333568 0x1FFF000BFF: ???
- n1: 3923968 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
-  n0: 3756032 in 83 places, all below massif's threshold (1.00%)
+ n1: 5099520 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 4861952 in 112 places, all below massif's threshold (1.00%)
  n0: 651264 in 2 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=21
-#-----------
-time=720036429
-mem_heap_B=132632576
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=22
-#-----------
-time=779577720
-mem_heap_B=132923392
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=23
-#-----------
-time=811564187
-mem_heap_B=133709824
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=844258821
-mem_heap_B=135094272
+time=873251256
+mem_heap_B=135135232
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=871905696
-mem_heap_B=135127040
+time=907340112
+mem_heap_B=137076736
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=906198448
-mem_heap_B=137072640
+time=965351721
+mem_heap_B=137175040
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=964227257
-mem_heap_B=137166848
+time=999534545
+mem_heap_B=137986048
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=997180689
-mem_heap_B=138039296
+time=1028380427
+mem_heap_B=138555392
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=1027606030
-mem_heap_B=138731520
+time=1085685552
+mem_heap_B=139010048
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=1084947157
-mem_heap_B=139116544
+time=1116942470
+mem_heap_B=139591680
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=1116352213
-mem_heap_B=139698176
+time=1157867872
+mem_heap_B=139825152
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=1157278224
-mem_heap_B=139931648
+time=1194952380
+mem_heap_B=140390400
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=1196046023
-mem_heap_B=140541952
+time=1227957578
+mem_heap_B=140451840
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=1223600362
-mem_heap_B=140554240
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=35
-#-----------
-time=1282779762
-mem_heap_B=140578816
+time=1276685773
+mem_heap_B=140464128
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=detailed
-n3: 140578816 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+n3: 140464128 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
  n5: 132890624 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
   n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
    n1: 61444096 0x1FFF0006EF: ???
@@ -471,18 +463,16 @@ n3: 140578816 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
     n1: 3268608 0x1FFF00016F: ???
      n1: 3268608 0x1FFF00057F: ???
       n0: 3268608 0x3A98FFF: ???
-  n0: 9986048 in 28 places, all below massif's threshold (1.00%)
-  n1: 8454144 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
-   n1: 8454144 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
-    n3: 8454144 0x80FFF: ???
-     n0: 5283840 in 8 places, all below massif's threshold (1.00%)
-     n1: 1585152 0x1: ???
-      n1: 1585152 0x8326C9F: ???
-       n0: 1585152 in 2 places, all below massif's threshold (1.00%)
-     n1: 1585152 0x1A: ???
-      n1: 1585152 0x8326C9F: ???
-       n1: 1585152 0x729507F: ??? (in /usr/local/bin/libpypy3-c.so)
+  n0: 11042816 in 30 places, all below massif's threshold (1.00%)
+  n1: 7925760 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 7925760 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n2: 7925760 0x80FFF: ???
+     n0: 5812224 in 7 places, all below massif's threshold (1.00%)
+     n1: 2113536 0x3: ???
+      n2: 2113536 0x8326C9F: ???
+       n1: 1585152 0x7294F7F: ??? (in /usr/local/bin/libpypy3-c.so)
         n0: 1585152 in 3 places, all below massif's threshold (1.00%)
+       n0: 528384 in 1 place, below massif's threshold (1.00%)
   n2: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
    n1: 2605056 0x1FFEFFBBCF: ???
     n1: 2605056 0x1FFEFFB5DF: ???
@@ -513,69 +503,93 @@ n3: 140578816 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
                        n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
                         n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
                          n0: 4333568 0x1FFF000BFF: ???
- n2: 7036928 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
-  n0: 5128192 in 109 places, all below massif's threshold (1.00%)
-  n1: 1622016 0x100002F47: ???
-   n0: 1622016 in 127 places, all below massif's threshold (1.00%)
+ n2: 6922240 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 5001216 in 127 places, all below massif's threshold (1.00%)
+  n1: 1519616 0x100002F47: ???
+   n0: 1519616 in 123 places, all below massif's threshold (1.00%)
  n0: 651264 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=1302061364
+mem_heap_B=140812288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=1318326064
-mem_heap_B=140918784
+time=1353659402
+mem_heap_B=140824576
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=1352912216
-mem_heap_B=140931072
+time=1400102336
+mem_heap_B=140873728
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=1385986502
-mem_heap_B=140955648
+time=1439283544
+mem_heap_B=141762560
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=1438714910
-mem_heap_B=141873152
+time=1496598481
+mem_heap_B=141791232
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=1469145939
-mem_heap_B=141877248
+time=1537346698
+mem_heap_B=141864960
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=1500778793
-mem_heap_B=141910016
+time=1572883525
+mem_heap_B=141926400
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=1557723351
-mem_heap_B=141946880
+time=1606128767
+mem_heap_B=142737408
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1650615258
+mem_heap_B=142774272
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1680628666
+mem_heap_B=143372288
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=detailed
-n3: 141946880 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
- n5: 133419008 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+n3: 143372288 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 134336512 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
   n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
    n1: 61444096 0x1FFF0006EF: ???
     n1: 61444096 0x1FFF0000FF: ???
@@ -593,18 +607,16 @@ n3: 141946880 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
     n1: 3268608 0x1FFF00016F: ???
      n1: 3268608 0x1FFF00057F: ???
       n0: 3268608 0x3A98FFF: ???
-  n0: 10514432 in 29 places, all below massif's threshold (1.00%)
-  n1: 8454144 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
-   n1: 8454144 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
-    n3: 8454144 0x80FFF: ???
-     n0: 5283840 in 8 places, all below massif's threshold (1.00%)
-     n1: 1585152 0x1: ???
-      n1: 1585152 0x8326C9F: ???
-       n0: 1585152 in 2 places, all below massif's threshold (1.00%)
-     n1: 1585152 0x1A: ???
-      n1: 1585152 0x8326C9F: ???
-       n1: 1585152 0x729507F: ??? (in /usr/local/bin/libpypy3-c.so)
+  n0: 11571200 in 31 places, all below massif's threshold (1.00%)
+  n1: 7925760 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 7925760 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n2: 7925760 0x80FFF: ???
+     n0: 5812224 in 7 places, all below massif's threshold (1.00%)
+     n1: 2113536 0x3: ???
+      n2: 2113536 0x8326C9F: ???
+       n1: 1585152 0x7294F7F: ??? (in /usr/local/bin/libpypy3-c.so)
         n0: 1585152 in 3 places, all below massif's threshold (1.00%)
+       n0: 528384 in 1 place, below massif's threshold (1.00%)
   n2: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
    n1: 2605056 0x1FFEFFBBCF: ???
     n1: 2605056 0x1FFEFFB5DF: ???
@@ -635,47 +647,31 @@ n3: 141946880 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
                        n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
                         n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
                          n0: 4333568 0x1FFF000BFF: ???
- n2: 7876608 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
-  n0: 5967872 in 116 places, all below massif's threshold (1.00%)
-  n1: 1622016 0x100002F47: ???
-   n0: 1622016 in 127 places, all below massif's threshold (1.00%)
+ n2: 8384512 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 6402048 in 140 places, all below massif's threshold (1.00%)
+  n1: 1519616 0x100002F47: ???
+   n0: 1519616 in 123 places, all below massif's threshold (1.00%)
  n0: 651264 in 2 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=43
-#-----------
-time=1604818823
-mem_heap_B=142778368
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=44
-#-----------
-time=1632265362
-mem_heap_B=142798848
-mem_heap_extra_B=0
-mem_stacks_B=0
-heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=1679613886
-mem_heap_B=143503360
+time=1730345368
+mem_heap_B=144293888
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=1732807126
-mem_heap_B=144556032
+time=1948377671
+mem_heap_B=145608704
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=2009513559
+time=2034154875
 mem_heap_B=146137088
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -683,7 +679,7 @@ heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=2041166864
+time=2314279307
 mem_heap_B=146661376
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -691,7 +687,7 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=2278463213
+time=2374284213
 mem_heap_B=147189760
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -699,7 +695,7 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=2372658895
+time=2528282755
 mem_heap_B=148238336
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -707,7 +703,7 @@ heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=2533973611
+time=2661426154
 mem_heap_B=148766720
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -715,7 +711,7 @@ heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=2850814853
+time=2854173679
 mem_heap_B=149295104
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -723,13 +719,13 @@ heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=2968947469
-mem_heap_B=150872064
+time=2907796118
+mem_heap_B=150343680
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=detailed
-n3: 150872064 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
- n5: 141836288 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
+n3: 150343680 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n5: 141307904 0x4034BDB: mmap (in /lib/ld-musl-x86_64.so.1)
   n4: 104841216 0x1083B8: ??? (in /usr/local/bin/pypy3)
    n1: 61444096 0x1FFF0006EF: ???
     n1: 61444096 0x1FFF0000FF: ???
@@ -747,18 +743,16 @@ n3: 150872064 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
     n1: 3268608 0x1FFF00016F: ???
      n1: 3268608 0x1FFF00057F: ???
       n0: 3268608 0x3A98FFF: ???
-  n0: 17739776 in 42 places, all below massif's threshold (1.00%)
-  n1: 8454144 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
-   n1: 8454144 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
-    n3: 8454144 0x80FFF: ???
-     n0: 5283840 in 8 places, all below massif's threshold (1.00%)
-     n1: 1585152 0x1: ???
-      n1: 1585152 0x8326C9F: ???
-       n0: 1585152 in 2 places, all below massif's threshold (1.00%)
-     n1: 1585152 0x1A: ???
-      n1: 1585152 0x8326C9F: ???
-       n1: 1585152 0x729507F: ??? (in /usr/local/bin/libpypy3-c.so)
+  n0: 17358848 in 40 places, all below massif's threshold (1.00%)
+  n1: 7925760 0x4092A7F: ??? (in /lib/ld-musl-x86_64.so.1)
+   n1: 7925760 0x40234E3: malloc (in /lib/ld-musl-x86_64.so.1)
+    n2: 7925760 0x80FFF: ???
+     n0: 5812224 in 7 places, all below massif's threshold (1.00%)
+     n1: 2113536 0x3: ???
+      n2: 2113536 0x8326C9F: ???
+       n1: 1585152 0x7294F7F: ??? (in /usr/local/bin/libpypy3-c.so)
         n0: 1585152 in 3 places, all below massif's threshold (1.00%)
+       n0: 528384 in 1 place, below massif's threshold (1.00%)
   n2: 4747264 0x8D2AB80: ??? (in /usr/local/lib_pypy/_pypy_openssl.pypy36-pp73-x86_64-linux-gnu.so)
    n1: 2605056 0x1FFEFFBBCF: ???
     n1: 2605056 0x1FFEFFB5DF: ???
@@ -789,33 +783,31 @@ n3: 150872064 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
                        n1: 4333568 0x401C1F4: ??? (in /lib/ld-musl-x86_64.so.1)
                         n1: 4333568 0x401C1CD: ??? (in /lib/ld-musl-x86_64.so.1)
                          n0: 4333568 0x1FFF000BFF: ???
- n3: 8384512 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
-  n0: 4825088 in 118 places, all below massif's threshold (1.00%)
-  n1: 1622016 0x100002F47: ???
-   n0: 1622016 in 127 places, all below massif's threshold (1.00%)
-  n1: 1576960 0x10001500F: ???
-   n0: 1576960 in 11 places, all below massif's threshold (1.00%)
+ n2: 8384512 0x4022ABD: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 6402048 in 140 places, all below massif's threshold (1.00%)
+  n1: 1519616 0x100002F47: ???
+   n0: 1519616 in 123 places, all below massif's threshold (1.00%)
  n0: 651264 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=54
 #-----------
-time=3097479209
-mem_heap_B=152969216
+time=2973549128
+mem_heap_B=150872064
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=3157987369
-mem_heap_B=153497600
+time=3124733414
+mem_heap_B=152969216
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=3498162269
+time=3374153964
 mem_heap_B=154025984
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -823,7 +815,7 @@ heap_tree=empty
 #-----------
 snapshot=57
 #-----------
-time=3800639011
+time=3680674562
 mem_heap_B=154554368
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -831,7 +823,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=4011684134
+time=3949615454
 mem_heap_B=155082752
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -839,7 +831,7 @@ heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=4241812697
+time=3986387578
 mem_heap_B=157179904
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -847,15 +839,23 @@ heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=4500281366
-mem_heap_B=158236672
+time=4105811380
+mem_heap_B=157708288
 mem_heap_extra_B=0
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=7325774803
+time=4240973710
+mem_heap_B=158236672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=8919424689
 mem_heap_B=158765056
 mem_heap_extra_B=0
 mem_stacks_B=0

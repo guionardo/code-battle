@@ -1,7 +1,7 @@
 [
     {
-        "Id": "858e5c1aefeb46d38d7924fa412f4b1eba3eb52b0978b55064bb8a2e6c524e33",
-        "Created": "2021-04-04T01:02:13.590388306Z",
+        "Id": "6615a71d7ea68661ac7067e6dddd66320f41d4ead3a40ed723782b5002b8810f",
+        "Created": "2021-04-04T01:31:25.683799514Z",
         "Path": "sh",
         "Args": [
             "timing.sh",
@@ -18,14 +18,14 @@
             "Pid": 0,
             "ExitCode": 0,
             "Error": "",
-            "StartedAt": "2021-04-04T01:04:24.306248019Z",
-            "FinishedAt": "2021-04-04T01:04:27.420156Z"
+            "StartedAt": "2021-04-04T01:37:18.95540685Z",
+            "FinishedAt": "2021-04-04T01:37:21.959066805Z"
         },
-        "Image": "sha256:984a7f1c4f3a2f9d9a08171f117fd0b69e98ee8fb1117048d35de17691dc78f7",
-        "ResolvConfPath": "/var/lib/docker/containers/858e5c1aefeb46d38d7924fa412f4b1eba3eb52b0978b55064bb8a2e6c524e33/resolv.conf",
-        "HostnamePath": "/var/lib/docker/containers/858e5c1aefeb46d38d7924fa412f4b1eba3eb52b0978b55064bb8a2e6c524e33/hostname",
-        "HostsPath": "/var/lib/docker/containers/858e5c1aefeb46d38d7924fa412f4b1eba3eb52b0978b55064bb8a2e6c524e33/hosts",
-        "LogPath": "/var/lib/docker/containers/858e5c1aefeb46d38d7924fa412f4b1eba3eb52b0978b55064bb8a2e6c524e33/858e5c1aefeb46d38d7924fa412f4b1eba3eb52b0978b55064bb8a2e6c524e33-json.log",
+        "Image": "sha256:b655e3133325730c45424fc8fb67a183f2ef708e9e76e5bb22d94127c1115850",
+        "ResolvConfPath": "/var/lib/docker/containers/6615a71d7ea68661ac7067e6dddd66320f41d4ead3a40ed723782b5002b8810f/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/6615a71d7ea68661ac7067e6dddd66320f41d4ead3a40ed723782b5002b8810f/hostname",
+        "HostsPath": "/var/lib/docker/containers/6615a71d7ea68661ac7067e6dddd66320f41d4ead3a40ed723782b5002b8810f/hosts",
+        "LogPath": "/var/lib/docker/containers/6615a71d7ea68661ac7067e6dddd66320f41d4ead3a40ed723782b5002b8810f/6615a71d7ea68661ac7067e6dddd66320f41d4ead3a40ed723782b5002b8810f-json.log",
         "Name": "/code-battle-node",
         "RestartCount": 0,
         "Driver": "overlay2",
@@ -36,8 +36,8 @@
         "ExecIDs": null,
         "HostConfig": {
             "Binds": [
-                "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache:/apk_cache:rw",
-                "/home/guionardo/dev/github.com/guionardo/code-battle/reports:/reports:rw"
+                "/home/guionardo/dev/github.com/guionardo/code-battle/reports:/reports:rw",
+                "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache:/apk_cache:rw"
             ],
             "ContainerIDFile": "",
             "LogConfig": {
@@ -132,22 +132,14 @@
         },
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/c489d4d7b045ed07d34567375f5dc0b1c6149378ae8c09c16873cef73b5bc4a9-init/diff:/var/lib/docker/overlay2/2411cdfe34ebf869b32327951044c8432b907e5bd04da678fe59d1cdb78774b0/diff:/var/lib/docker/overlay2/e77b0980addf2792986bf8db1aac8cbc57e201015bb97886d1450ae4e899172c/diff:/var/lib/docker/overlay2/af670718daca4bed3330c54929e0a69a1f1bfb40c1bff4cec40d2eb5180d4743/diff:/var/lib/docker/overlay2/393af32b2fd4541f45b2c52396d7fe4c3f9ca95c477fc40d26dec03be3008092/diff:/var/lib/docker/overlay2/b9f6f2854545c7e0f7d75e3b47ace3d2b875b84b0927834f6069bd38aad23ec2/diff:/var/lib/docker/overlay2/2bbf5b7f53242cecd072b739a0c42d6d54715dd96e2aa6375f7203f9acc983a8/diff:/var/lib/docker/overlay2/bb059e6790fc425d0a7aa1877b56f8e248fe9f1665848582ef2f6856d0855c8e/diff",
-                "MergedDir": "/var/lib/docker/overlay2/c489d4d7b045ed07d34567375f5dc0b1c6149378ae8c09c16873cef73b5bc4a9/merged",
-                "UpperDir": "/var/lib/docker/overlay2/c489d4d7b045ed07d34567375f5dc0b1c6149378ae8c09c16873cef73b5bc4a9/diff",
-                "WorkDir": "/var/lib/docker/overlay2/c489d4d7b045ed07d34567375f5dc0b1c6149378ae8c09c16873cef73b5bc4a9/work"
+                "LowerDir": "/var/lib/docker/overlay2/3eb9f31fcf62130415083175fddbe68b856a71d36176ab285e698a02fbcb829c-init/diff:/var/lib/docker/overlay2/a81eed8b93285f79147fc3915a9bbd1ce122ee2db9a7243bed798f7504379203/diff:/var/lib/docker/overlay2/685a28ecb7e4f74e8ea92c883f1962622052c0f8ca670feb6bc0b03b86a5e758/diff:/var/lib/docker/overlay2/af670718daca4bed3330c54929e0a69a1f1bfb40c1bff4cec40d2eb5180d4743/diff:/var/lib/docker/overlay2/393af32b2fd4541f45b2c52396d7fe4c3f9ca95c477fc40d26dec03be3008092/diff:/var/lib/docker/overlay2/b9f6f2854545c7e0f7d75e3b47ace3d2b875b84b0927834f6069bd38aad23ec2/diff:/var/lib/docker/overlay2/2bbf5b7f53242cecd072b739a0c42d6d54715dd96e2aa6375f7203f9acc983a8/diff:/var/lib/docker/overlay2/bb059e6790fc425d0a7aa1877b56f8e248fe9f1665848582ef2f6856d0855c8e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/3eb9f31fcf62130415083175fddbe68b856a71d36176ab285e698a02fbcb829c/merged",
+                "UpperDir": "/var/lib/docker/overlay2/3eb9f31fcf62130415083175fddbe68b856a71d36176ab285e698a02fbcb829c/diff",
+                "WorkDir": "/var/lib/docker/overlay2/3eb9f31fcf62130415083175fddbe68b856a71d36176ab285e698a02fbcb829c/work"
             },
             "Name": "overlay2"
         },
         "Mounts": [
-            {
-                "Type": "bind",
-                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache",
-                "Destination": "/apk_cache",
-                "Mode": "rw",
-                "RW": true,
-                "Propagation": "rprivate"
-            },
             {
                 "Type": "bind",
                 "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/reports",
@@ -155,10 +147,18 @@
                 "Mode": "rw",
                 "RW": true,
                 "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/guionardo/dev/github.com/guionardo/code-battle/apk_cache",
+                "Destination": "/apk_cache",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
             }
         ],
         "Config": {
-            "Hostname": "858e5c1aefeb",
+            "Hostname": "6615a71d7ea6",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
@@ -191,7 +191,7 @@
             ],
             "OnBuild": null,
             "Labels": {
-                "com.docker.compose.config-hash": "963a7919a14e3f9b880fd06ff417056560e6efffd03ac5954bb02934c06134ce",
+                "com.docker.compose.config-hash": "3651ce32a305ae7ef0162c016888b158d7cb91a36d7772a177fcaf7fa403bd00",
                 "com.docker.compose.container-number": "1",
                 "com.docker.compose.oneoff": "False",
                 "com.docker.compose.project": "code-battle",
@@ -203,12 +203,12 @@
         },
         "NetworkSettings": {
             "Bridge": "",
-            "SandboxID": "0b1f0b78d4f900aaad77c1296e1dd0ca6be16fb3cfe938f6bab578f2714bf5bd",
+            "SandboxID": "893694b8ca86f43e7e2168f08e9801769bf35f8cef206e0092ff53b907a54fa7",
             "HairpinMode": false,
             "LinkLocalIPv6Address": "",
             "LinkLocalIPv6PrefixLen": 0,
             "Ports": {},
-            "SandboxKey": "/var/run/docker/netns/0b1f0b78d4f9",
+            "SandboxKey": "/var/run/docker/netns/893694b8ca86",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null,
             "EndpointID": "",
@@ -224,7 +224,7 @@
                     "IPAMConfig": null,
                     "Links": null,
                     "Aliases": [
-                        "858e5c1aefeb",
+                        "6615a71d7ea6",
                         "node"
                     ],
                     "NetworkID": "e4b742d7c308d9820a5e59cba7a888946c55354d18aa619aaa43214084661ea0",

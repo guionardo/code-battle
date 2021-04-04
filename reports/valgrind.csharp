@@ -1,0 +1,840 @@
+desc: --pages-as-heap=yes --massif-out-file=/reports/valgrind.csharp
+cmd: dotnet csharp.dll
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=12288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=45509
+mem_heap_B=3653632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=5918335
+mem_heap_B=3727360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=6140508
+mem_heap_B=4403200
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=6329685
+mem_heap_B=4603904
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=6614068
+mem_heap_B=4616192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=7703804
+mem_heap_B=4616192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=7753532
+mem_heap_B=4677632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=8117023
+mem_heap_B=4698112
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=8439063
+mem_heap_B=5001216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=8610754
+mem_heap_B=5201920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=8834083
+mem_heap_B=5214208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=9923823
+mem_heap_B=5214208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=9973549
+mem_heap_B=5275648
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5275648 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n6: 4542464 0x40363E1: mmap (in /lib/ld-musl-x86_64.so.1)
+  n6: 2879488 0x1FFF0000AF: ???
+   n0: 1818624 0x1FFF0000AF: ???
+   n1: 598016 0xB6FFF: ???
+    n1: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 598016 0x1FFF00055F: ???
+      n1: 598016 0x1A1FFF: ???
+       n0: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 282624 0x148FFF: ???
+    n1: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 282624 0x1FFF00055F: ???
+      n1: 282624 0x1A1FFF: ???
+       n0: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 77824 0x18DFFF: ???
+    n1: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 77824 0x1FFF00055F: ???
+      n1: 77824 0x1A1FFF: ???
+       n0: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 69632 0x2FFF: ???
+    n1: 69632 0x4A3EFFF: ???
+     n1: 69632 0x1FFF00055F: ???
+      n1: 69632 0x19FFF: ???
+       n0: 69632 0x4A3EFFF: ???
+   n0: 20480 in 2 places, all below massif's threshold (1.00%)
+  n4: 671744 0x1FFEFFFF2F: ???
+   n0: 344064 0x1FFEFFFF2F: ???
+   n1: 245760 0x3FFF: ???
+    n1: 245760 0x4A6AFFF: ???
+     n1: 245760 0x1FFF0003DF: ???
+      n1: 245760 0x53FFF: ???
+       n0: 245760 0x4A6AFFF: ???
+   n1: 73728 0x3FFFF: ???
+    n1: 73728 0x4A6AFFF: ???
+     n1: 73728 0x1FFF0003DF: ???
+      n1: 73728 0x53FFF: ???
+       n0: 73728 0x4A6AFFF: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n4: 598016 0x1FFEFFFBEF: ???
+   n0: 311296 0x1FFEFFFBEF: ???
+   n1: 212992 0x4FFF: ???
+    n1: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 212992 0x1FFF00009F: ???
+      n1: 212992 0x4BFFF: ???
+       n0: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n1: 65536 0x38FFF: ???
+    n1: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 65536 0x1FFF00009F: ???
+      n1: 65536 0x4BFFF: ???
+       n0: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n3: 139264 0x1000025FF: ???
+   n0: 69632 0x4AF6D52: ??? (in /usr/share/dotnet/shared/Microsoft.NETCore.App/5.0.3/libhostpolicy.so)
+   n0: 69632 0xA0A3642B4AD1A0CE: ???
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n1: 122880 0x4A5897F: ??? (in /usr/lib/libgcc_s.so.1)
+   n0: 122880 0x40249CE: ??? (in /lib/ld-musl-x86_64.so.1)
+  n0: 57344 in 9 places, all below massif's threshold (1.00%)
+ n0: 724992 0x0: ???
+ n0: 8192 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=10337044
+mem_heap_B=5296128
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=10500046
+mem_heap_B=5263360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=10793534
+mem_heap_B=5271552
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=11125391
+mem_heap_B=5275648
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=11780919
+mem_heap_B=5292032
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=11853529
+mem_heap_B=5287936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=12484321
+mem_heap_B=5292032
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=13108409
+mem_heap_B=5320704
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=13137226
+mem_heap_B=5308416
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=13747974
+mem_heap_B=5312512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=13959248
+mem_heap_B=5316608
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=14243192
+mem_heap_B=5349376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=14517929
+mem_heap_B=5382144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=14757811
+mem_heap_B=5427200
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=15045533
+mem_heap_B=5451776
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=15201887
+mem_heap_B=5517312
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=15520950
+mem_heap_B=5554176
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=15739503
+mem_heap_B=5582848
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5582848 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n8: 4841472 0x40363E1: mmap (in /lib/ld-musl-x86_64.so.1)
+  n6: 2879488 0x1FFF0000AF: ???
+   n0: 1818624 0x1FFF0000AF: ???
+   n1: 598016 0xB6FFF: ???
+    n1: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 598016 0x1FFF00055F: ???
+      n1: 598016 0x1A1FFF: ???
+       n0: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 282624 0x148FFF: ???
+    n1: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 282624 0x1FFF00055F: ???
+      n1: 282624 0x1A1FFF: ???
+       n0: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 77824 0x18DFFF: ???
+    n1: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 77824 0x1FFF00055F: ???
+      n1: 77824 0x1A1FFF: ???
+       n0: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 69632 0x2FFF: ???
+    n1: 69632 0x4A3EFFF: ???
+     n1: 69632 0x1FFF00055F: ???
+      n1: 69632 0x19FFF: ???
+       n0: 69632 0x4A3EFFF: ???
+   n0: 20480 in 2 places, all below massif's threshold (1.00%)
+  n4: 671744 0x1FFEFFFF2F: ???
+   n0: 344064 0x1FFEFFFF2F: ???
+   n1: 245760 0x3FFF: ???
+    n1: 245760 0x4A6AFFF: ???
+     n1: 245760 0x1FFF0003DF: ???
+      n1: 245760 0x53FFF: ???
+       n0: 245760 0x4A6AFFF: ???
+   n1: 73728 0x3FFFF: ???
+    n1: 73728 0x4A6AFFF: ???
+     n1: 73728 0x1FFF0003DF: ???
+      n1: 73728 0x53FFF: ???
+       n0: 73728 0x4A6AFFF: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n4: 598016 0x1FFEFFFBEF: ???
+   n0: 311296 0x1FFEFFFBEF: ???
+   n1: 212992 0x4FFF: ???
+    n1: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 212992 0x1FFF00009F: ???
+      n1: 212992 0x4BFFF: ???
+       n0: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n1: 65536 0x38FFF: ???
+    n1: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 65536 0x1FFF00009F: ???
+      n1: 65536 0x4BFFF: ???
+       n0: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n0: 167936 in 17 places, all below massif's threshold (1.00%)
+  n3: 139264 0x1000025FF: ???
+   n0: 69632 0x4AF6D52: ??? (in /usr/share/dotnet/shared/Microsoft.NETCore.App/5.0.3/libhostpolicy.so)
+   n0: 69632 0xA0A3642B4AD1A0CE: ???
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n1: 122880 0x4A5897F: ??? (in /usr/lib/libgcc_s.so.1)
+   n0: 122880 0x40249CE: ??? (in /lib/ld-musl-x86_64.so.1)
+  n1: 110592 0xA0A3642B4AD1A0CE: ???
+   n1: 110592 0x1FFEFFFC87: ???
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 57344 0x7F0000025FF: ???
+   n0: 57344 in 3 places, all below massif's threshold (1.00%)
+ n0: 724992 0x0: ???
+ n0: 16384 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=16083833
+mem_heap_B=5640192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=16345727
+mem_heap_B=5689344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5689344 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n8: 4947968 0x40363E1: mmap (in /lib/ld-musl-x86_64.so.1)
+  n6: 2879488 0x1FFF0000AF: ???
+   n0: 1818624 0x1FFF0000AF: ???
+   n1: 598016 0xB6FFF: ???
+    n1: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 598016 0x1FFF00055F: ???
+      n1: 598016 0x1A1FFF: ???
+       n0: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 282624 0x148FFF: ???
+    n1: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 282624 0x1FFF00055F: ???
+      n1: 282624 0x1A1FFF: ???
+       n0: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 77824 0x18DFFF: ???
+    n1: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 77824 0x1FFF00055F: ???
+      n1: 77824 0x1A1FFF: ???
+       n0: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 69632 0x2FFF: ???
+    n1: 69632 0x4A3EFFF: ???
+     n1: 69632 0x1FFF00055F: ???
+      n1: 69632 0x19FFF: ???
+       n0: 69632 0x4A3EFFF: ???
+   n0: 20480 in 2 places, all below massif's threshold (1.00%)
+  n4: 671744 0x1FFEFFFF2F: ???
+   n0: 344064 0x1FFEFFFF2F: ???
+   n1: 245760 0x3FFF: ???
+    n1: 245760 0x4A6AFFF: ???
+     n1: 245760 0x1FFF0003DF: ???
+      n1: 245760 0x53FFF: ???
+       n0: 245760 0x4A6AFFF: ???
+   n1: 73728 0x3FFFF: ???
+    n1: 73728 0x4A6AFFF: ???
+     n1: 73728 0x1FFF0003DF: ???
+      n1: 73728 0x53FFF: ???
+       n0: 73728 0x4A6AFFF: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n4: 598016 0x1FFEFFFBEF: ???
+   n0: 311296 0x1FFEFFFBEF: ???
+   n1: 212992 0x4FFF: ???
+    n1: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 212992 0x1FFF00009F: ???
+      n1: 212992 0x4BFFF: ???
+       n0: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n1: 65536 0x38FFF: ???
+    n1: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 65536 0x1FFF00009F: ???
+      n1: 65536 0x4BFFF: ???
+       n0: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n0: 274432 in 24 places, all below massif's threshold (1.00%)
+  n3: 139264 0x1000025FF: ???
+   n0: 69632 0x4AF6D52: ??? (in /usr/share/dotnet/shared/Microsoft.NETCore.App/5.0.3/libhostpolicy.so)
+   n0: 69632 0xA0A3642B4AD1A0CE: ???
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n1: 122880 0x4A5897F: ??? (in /usr/lib/libgcc_s.so.1)
+   n0: 122880 0x40249CE: ??? (in /lib/ld-musl-x86_64.so.1)
+  n1: 110592 0xA0A3642B4AD1A0CE: ???
+   n1: 110592 0x1FFEFFFC87: ???
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 57344 0x7F0000025FF: ???
+   n0: 57344 in 3 places, all below massif's threshold (1.00%)
+ n0: 724992 0x0: ???
+ n0: 16384 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=16723831
+mem_heap_B=5742592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=17110468
+mem_heap_B=5857280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=17373917
+mem_heap_B=5615616
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=17940833
+mem_heap_B=5632000
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=19166238
+mem_heap_B=5636096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=19391122
+mem_heap_B=5640192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=19625633
+mem_heap_B=5672960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=19848013
+mem_heap_B=5677056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=20297827
+mem_heap_B=5681152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=20738666
+mem_heap_B=5685248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=21180001
+mem_heap_B=5713920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=21383753
+mem_heap_B=5730304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=21725078
+mem_heap_B=5689344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5689344 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n6: 4943872 0x40363E1: mmap (in /lib/ld-musl-x86_64.so.1)
+  n6: 2879488 0x1FFF0000AF: ???
+   n0: 1818624 0x1FFF0000AF: ???
+   n1: 598016 0xB6FFF: ???
+    n1: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 598016 0x1FFF00055F: ???
+      n1: 598016 0x1A1FFF: ???
+       n0: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 282624 0x148FFF: ???
+    n1: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 282624 0x1FFF00055F: ???
+      n1: 282624 0x1A1FFF: ???
+       n0: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 77824 0x18DFFF: ???
+    n1: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 77824 0x1FFF00055F: ???
+      n1: 77824 0x1A1FFF: ???
+       n0: 77824 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 69632 0x2FFF: ???
+    n1: 69632 0x4A3EFFF: ???
+     n1: 69632 0x1FFF00055F: ???
+      n1: 69632 0x19FFF: ???
+       n0: 69632 0x4A3EFFF: ???
+   n0: 20480 in 2 places, all below massif's threshold (1.00%)
+  n4: 671744 0x1FFEFFFF2F: ???
+   n0: 344064 0x1FFEFFFF2F: ???
+   n1: 245760 0x3FFF: ???
+    n1: 245760 0x4A6AFFF: ???
+     n1: 245760 0x1FFF0003DF: ???
+      n1: 245760 0x53FFF: ???
+       n0: 245760 0x4A6AFFF: ???
+   n1: 73728 0x3FFFF: ???
+    n1: 73728 0x4A6AFFF: ???
+     n1: 73728 0x1FFF0003DF: ???
+      n1: 73728 0x53FFF: ???
+       n0: 73728 0x4A6AFFF: ???
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n4: 598016 0x1FFEFFFBEF: ???
+   n0: 311296 0x1FFEFFFBEF: ???
+   n1: 212992 0x4FFF: ???
+    n1: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 212992 0x1FFF00009F: ???
+      n1: 212992 0x4BFFF: ???
+       n0: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n1: 65536 0x38FFF: ???
+    n1: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 65536 0x1FFF00009F: ???
+      n1: 65536 0x4BFFF: ???
+       n0: 65536 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+  n0: 532480 in 42 places, all below massif's threshold (1.00%)
+  n1: 110592 0xA0A3642B4AD1A0CE: ???
+   n1: 110592 0x1FFEFFFC87: ???
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 57344 0x7F0000025FF: ???
+   n0: 57344 in 3 places, all below massif's threshold (1.00%)
+ n0: 724992 0x0: ???
+ n0: 20480 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=22020176
+mem_heap_B=13025280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=23419447
+mem_heap_B=20951040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=23436955
+mem_heap_B=21528576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n3: 21528576 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n6: 20783104 0x40363E1: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 14577664 0x1FFEFFF91F: ???
+   n0: 7393280 0x1FFEFFF91F: ???
+   n1: 4972544 0x71FFF: ???
+    n1: 4972544 0x4BDEFFF: ???
+     n1: 4972544 0x1FFEFFFDCF: ???
+      n1: 4972544 0x70CFFF: ???
+       n0: 4972544 0x4BDEFFF: ???
+   n1: 1441792 0x52FFFF: ???
+    n1: 1441792 0x4BDEFFF: ???
+     n1: 1441792 0x1FFEFFFDCF: ???
+      n1: 1441792 0x70CFFF: ???
+       n0: 1441792 0x4BDEFFF: ???
+   n1: 507904 0x68FFFF: ???
+    n1: 507904 0x4BDEFFF: ???
+     n1: 507904 0x1FFEFFFDCF: ???
+      n1: 507904 0x70CFFF: ???
+       n0: 507904 0x4BDEFFF: ???
+  n4: 2879488 0x1FFF0000AF: ???
+   n0: 1818624 0x1FFF0000AF: ???
+   n1: 598016 0xB6FFF: ???
+    n1: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 598016 0x1FFF00055F: ???
+      n1: 598016 0x1A1FFF: ???
+       n0: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 282624 0x148FFF: ???
+    n1: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 282624 0x1FFF00055F: ???
+      n1: 282624 0x1A1FFF: ???
+       n0: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n0: 167936 in 4 places, all below massif's threshold (1.00%)
+  n3: 1310720 0x1FFEFFF41F: ???
+   n0: 737280 0x1FFEFFF41F: ???
+   n1: 360448 0x5AFFF: ???
+    n1: 360448 0x52EBFFF: ???
+     n1: 360448 0x1FFEFFF8CF: ???
+      n1: 360448 0xB3FFF: ???
+       n0: 360448 0x52EBFFF: ???
+   n0: 208896 in 2 places, all below massif's threshold (1.00%)
+  n3: 671744 0x1FFEFFFF2F: ???
+   n0: 344064 0x1FFEFFFF2F: ???
+   n1: 245760 0x3FFF: ???
+    n1: 245760 0x4A6AFFF: ???
+     n1: 245760 0x1FFF0003DF: ???
+      n1: 245760 0x53FFF: ???
+       n0: 245760 0x4A6AFFF: ???
+   n0: 81920 in 2 places, all below massif's threshold (1.00%)
+  n0: 651264 in 46 places, all below massif's threshold (1.00%)
+  n2: 598016 0x1FFEFFFBEF: ???
+   n0: 311296 0x1FFEFFFBEF: ???
+   n0: 286720 in 3 places, all below massif's threshold (1.00%)
+ n0: 724992 0x0: ???
+ n0: 20480 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=23473225
+mem_heap_B=20791296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=23544007
+mem_heap_B=20848640
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=23658252
+mem_heap_B=20852736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=23730940
+mem_heap_B=20856832
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=23826724
+mem_heap_B=20852736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=23864774
+mem_heap_B=20852736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=23945312
+mem_heap_B=20856832
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=24036513
+mem_heap_B=20852736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=24069139
+mem_heap_B=20852736
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=24092093
+mem_heap_B=20881408
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 20881408 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n6: 20135936 0x40363E1: mmap (in /lib/ld-musl-x86_64.so.1)
+  n4: 14577664 0x1FFEFFF91F: ???
+   n0: 7393280 0x1FFEFFF91F: ???
+   n1: 4972544 0x71FFF: ???
+    n1: 4972544 0x4BDEFFF: ???
+     n1: 4972544 0x1FFEFFFDCF: ???
+      n1: 4972544 0x70CFFF: ???
+       n0: 4972544 0x4BDEFFF: ???
+   n1: 1441792 0x52FFFF: ???
+    n1: 1441792 0x4BDEFFF: ???
+     n1: 1441792 0x1FFEFFFDCF: ???
+      n1: 1441792 0x70CFFF: ???
+       n0: 1441792 0x4BDEFFF: ???
+   n1: 507904 0x68FFFF: ???
+    n1: 507904 0x4BDEFFF: ???
+     n1: 507904 0x1FFEFFFDCF: ???
+      n1: 507904 0x70CFFF: ???
+       n0: 507904 0x4BDEFFF: ???
+  n4: 2879488 0x1FFF0000AF: ???
+   n0: 1818624 0x1FFF0000AF: ???
+   n1: 598016 0xB6FFF: ???
+    n1: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 598016 0x1FFF00055F: ???
+      n1: 598016 0x1A1FFF: ???
+       n0: 598016 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n1: 282624 0x148FFF: ???
+    n1: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+     n1: 282624 0x1FFF00055F: ???
+      n1: 282624 0x1A1FFF: ???
+       n0: 282624 0x489CFFF: ??? (in /usr/lib/valgrind/vgpreload_core-amd64-linux.so)
+   n0: 167936 in 4 places, all below massif's threshold (1.00%)
+  n0: 704512 in 53 places, all below massif's threshold (1.00%)
+  n3: 671744 0x1FFEFFFF2F: ???
+   n0: 344064 0x1FFEFFFF2F: ???
+   n1: 245760 0x3FFF: ???
+    n1: 245760 0x4A6AFFF: ???
+     n1: 245760 0x1FFF0003DF: ???
+      n1: 245760 0x53FFF: ???
+       n0: 245760 0x4A6AFFF: ???
+   n0: 81920 in 2 places, all below massif's threshold (1.00%)
+  n3: 598016 0x1FFEFFFBEF: ???
+   n0: 311296 0x1FFEFFFBEF: ???
+   n1: 212992 0x4FFF: ???
+    n1: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+     n1: 212992 0x1FFF00009F: ???
+      n1: 212992 0x4BFFF: ???
+       n0: 212992 0x4ABEFFF: ??? (in /usr/share/dotnet/host/fxr/5.0.3/libhostfxr.so)
+   n0: 73728 in 2 places, all below massif's threshold (1.00%)
+  n2: 573440 0x1FFEFFF41F: ???
+   n0: 569344 0x1FFEFFF41F: ???
+   n0: 4096 in 3 places, all below massif's threshold (1.00%)
+ n0: 724992 0x0: ???
+ n0: 20480 in 2 places, all below massif's threshold (1.00%)
