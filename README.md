@@ -7,16 +7,16 @@ Here we will execute some operations to check how much time we need to complete 
 ## Operations
 |                       |Python|Python Pypy|C#|Golang|PHP|
 |-|-----|----|--|--|--|
-|Loop iterations (1Mi)  |X| | | | |
-|Generate random ints   | | | | | |
-|Generate random floats | | | | | |
-|Sum integers           | | | | | |
-|Multiply floats        | | | | | |
+|Loop iterations (1Mi)  |✅|✅| | |✅|
+|Generate random ints   |✅|✅| | |✅|
+|Generate random floats |✅|✅| | |✅|
+|Sum integers           |✅|✅| | |✅|
+|Multiply floats        |✅|✅| | |✅|
 |Memory allocation      | | | | | |
 |Memory release         | | | | | |
 |File write             | | | | | |
 |File read              | | | | | |
-|HTTP Request           | | | | | |
+|HTTP Request           |✅|✅| | |✅|
 
 ## Operations
 
