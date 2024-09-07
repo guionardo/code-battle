@@ -6,7 +6,7 @@ COPY . /app
 
 RUN go build http_server.go
 
-FROM alpine as run
+FROM alpine:3.20.3 as run
 
 WORKDIR /app
 COPY --from=build /app/http_server .
