@@ -1,4 +1,4 @@
-FROM php:cli-alpine
+FROM php:8.4.8RC1-cli-alpine3.21
 
 WORKDIR /app
 
